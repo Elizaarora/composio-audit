@@ -1,0 +1,165 @@
+{
+  "total_apps": 100,
+  "valid_apps": 100,
+  "errored_apps": [],
+  "auth_counts": {
+    "OAuth2": 47,
+    "API key": 30,
+    "Token": 16,
+    "Unclear": 4,
+    "Basic auth": 2,
+    "Other": 1
+  },
+  "gating_counts": {
+    "Unclear": 44,
+    "Self-serve (free)": 23,
+    "Self-serve (paid/trial)": 16,
+    "Admin approval required": 7,
+    "Open source": 6,
+    "Partner/contact-sales gated": 4
+  },
+  "verdict_counts": {
+    "Ready": 83,
+    "Friction": 15,
+    "Blocked": 2
+  },
+  "confidence_counts": {
+    "High": 97,
+    "Medium": 3
+  },
+  "gating_by_category": {
+    "CRM and Sales": {
+      "Self-serve (free)": 2,
+      "Self-serve (paid/trial)": 5,
+      "Open source": 1,
+      "Unclear": 2
+    },
+    "Support and Helpdesk": {
+      "Self-serve (paid/trial)": 5,
+      "Self-serve (free)": 2,
+      "Unclear": 2,
+      "Partner/contact-sales gated": 1
+    },
+    "Communications and Messaging": {
+      "Self-serve (free)": 5,
+      "Unclear": 4,
+      "Open source": 1
+    },
+    "Marketing, Ads, Email and Social": {
+      "Admin approval required": 4,
+      "Self-serve (paid/trial)": 1,
+      "Unclear": 3,
+      "Self-serve (free)": 2
+    },
+    "Ecommerce": {
+      "Unclear": 6,
+      "Self-serve (free)": 3,
+      "Self-serve (paid/trial)": 1
+    },
+    "Data, SEO and Scraping": {
+      "Self-serve (free)": 3,
+      "Unclear": 2,
+      "Self-serve (paid/trial)": 2,
+      "Open source": 2,
+      "Partner/contact-sales gated": 1
+    },
+    "Developer, Infra and Data platforms": {
+      "Unclear": 8,
+      "Self-serve (free)": 1,
+      "Self-serve (paid/trial)": 1
+    },
+    "Productivity and Project Management": {
+      "Unclear": 7,
+      "Admin approval required": 1,
+      "Self-serve (free)": 1,
+      "Self-serve (paid/trial)": 1
+    },
+    "Finance and Fintech": {
+      "Unclear": 6,
+      "Self-serve (free)": 2,
+      "Admin approval required": 1,
+      "Partner/contact-sales gated": 1
+    },
+    "AI, Research and Media-native": {
+      "Open source": 2,
+      "Unclear": 4,
+      "Self-serve (free)": 2,
+      "Admin approval required": 1,
+      "Partner/contact-sales gated": 1
+    }
+  },
+  "verdict_by_category": {
+    "CRM and Sales": {
+      "Ready": 9,
+      "Friction": 1
+    },
+    "Support and Helpdesk": {
+      "Ready": 9,
+      "Friction": 1
+    },
+    "Communications and Messaging": {
+      "Ready": 10
+    },
+    "Marketing, Ads, Email and Social": {
+      "Friction": 4,
+      "Ready": 6
+    },
+    "Ecommerce": {
+      "Ready": 8,
+      "Friction": 2
+    },
+    "Data, SEO and Scraping": {
+      "Ready": 9,
+      "Friction": 1
+    },
+    "Developer, Infra and Data platforms": {
+      "Ready": 9,
+      "Friction": 1
+    },
+    "Productivity and Project Management": {
+      "Ready": 9,
+      "Friction": 1
+    },
+    "Finance and Fintech": {
+      "Ready": 7,
+      "Friction": 1,
+      "Blocked": 2
+    },
+    "AI, Research and Media-native": {
+      "Ready": 7,
+      "Friction": 3
+    }
+  },
+  "top_blockers": {
+    "Requires customer success team for API key": 1,
+    "Unclear OAuth authentication mechanism for API": 1,
+    "Developer token and multi-layer authentication required": 1,
+    "App Review process required for production access": 1,
+    "LinkedIn is selective in granting access": 1,
+    "Must be approved by Meta first": 1,
+    "Complex OAuth configuration and authorization workflows required": 1,
+    "API Docs password protected": 1,
+    "Requires contacting account manager for master key/account upgrade": 1,
+    "Temporary tokens expire after one hour requiring management": 1
+  },
+  "pass2_count": 93,
+  "pass2_pct": 93.0,
+  "low_confidence_final": [],
+  "fetch_failed_pass1": [
+    "Twenty",
+    "systeme.io",
+    "SE Ranking",
+    "Waterfall.io",
+    "Neo4j",
+    "Binance",
+    "Paygent Connect",
+    "PitchBook",
+    "NotebookLM",
+    "Otter AI",
+    "Consensus",
+    "Reducto",
+    "Devin",
+    "higgsfield",
+    "Grain"
+  ]
+}

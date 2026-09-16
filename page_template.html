@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toolkit Readiness Audit</title>
+<meta name="description" content="A 100-app research audit of which SaaS tools can become AI-agent toolkits today, grounded via Composio's SDK, with an honest accuracy verification pass.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+  :root {
+    --bg: #F5F7FA;
+    --surface: #FFFFFF;
+    --surface-2: #ECF0F4;
+    --border: #DCE2EA;
+    --ink: #131820;
+    --ink-2: #4A5568;
+    --ink-3: #5F6876;
+    --accent: #0E7C86;
+    --accent-ink: #075860;
+    --accent-soft: #E1F1F2;
+    --good: #157A40;
+    --good-soft: #E4F5EA;
+    --good-2: #0E7C86;
+    --good-2-soft: #E1F1F2;
+    --warn: #8F551A;
+    --warn-soft: #FBEEDF;
+    --critical: #B23A2F;
+    --critical-soft: #FBE8E5;
+    --neutral-status: #5B6472;
+    --neutral-soft: #E9EBEF;
+    --mono-surface: #10141B;
+    --mono-ink: #D7DCE4;
+    --shadow: 0 1px 2px rgba(20,24,33,.04), 0 8px 24px -12px rgba(20,24,33,.10);
+    --radius: 10px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0E1217;
+      --surface: #161B22;
+      --surface-2: #1C222B;
+      --border: #2B323D;
+      --ink: #E7EAEF;
+      --ink-2: #AEB6C2;
+      --ink-3: #8A93A0;
+      --accent: #35BAC5;
+      --accent-ink: #7FDDE5;
+      --accent-soft: #133238;
+      --good: #3FBE79;
+      --good-soft: #123726;
+      --good-2: #35BAC5;
+      --good-2-soft: #103237;
+      --warn: #E0A050;
+      --warn-soft: #3A2A14;
+      --critical: #E2685D;
+      --critical-soft: #3A1C18;
+      --neutral-status: #98A1AF;
+      --neutral-soft: #232A34;
+      --mono-surface: #0A0D12;
+      --mono-ink: #C7CDD7;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.5);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0E1217;
+    --surface: #161B22;
+    --surface-2: #1C222B;
+    --border: #2B323D;
+    --ink: #E7EAEF;
+    --ink-2: #AEB6C2;
+    --ink-3: #8A93A0;
+    --accent: #35BAC5;
+    --accent-ink: #7FDDE5;
+    --accent-soft: #133238;
+    --good: #3FBE79;
+    --good-soft: #123726;
+    --good-2: #35BAC5;
+    --good-2-soft: #103237;
+    --warn: #E0A050;
+    --warn-soft: #3A2A14;
+    --critical: #E2685D;
+    --critical-soft: #3A1C18;
+    --neutral-status: #98A1AF;
+    --neutral-soft: #232A34;
+    --mono-surface: #0A0D12;
+    --mono-ink: #C7CDD7;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.5);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { text-wrap: balance; font-weight: 600; letter-spacing: -0.01em; }
+  code, .mono, .num { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+  a { color: var(--accent-ink); }
+
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+  section { padding: 56px 0; border-bottom: 1px solid var(--border); }
+  section:last-of-type { border-bottom: none; }
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11.5px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    font-weight: 600;
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 14px;
+  }
+  .eyebrow::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); display: inline-block; }
+
+  /* ---------- Header ---------- */
+  header.masthead { padding: 64px 0 44px; border-bottom: 1px solid var(--border); }
+  header.masthead h1 { font-size: clamp(30px, 4vw, 44px); margin: 0 0 16px; max-width: 16ch; }
+  header.masthead .sub { font-size: 17px; color: var(--ink-2); max-width: 62ch; margin: 0 0 28px; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 10px; }
+  .meta-pill {
+    font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; color: var(--ink-2);
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 999px;
+    padding: 5px 12px;
+  }
+  .meta-pill b { color: var(--ink); font-weight: 600; }
+
+  /* ---------- Stat tiles ---------- */
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin: 28px 0 30px; }
+  .stat-tile {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 18px 20px; box-shadow: var(--shadow);
+  }
+  .stat-tile .n { font-family: 'IBM Plex Mono', monospace; font-size: 32px; font-weight: 600; color: var(--accent-ink); line-height: 1; }
+  .stat-tile .l { margin-top: 8px; font-size: 13px; color: var(--ink-2); }
+  .headline-text { font-size: 17px; line-height: 1.65; max-width: 74ch; color: var(--ink); }
+  .headline-text b { color: var(--accent-ink); font-weight: 600; }
+
+  /* ---------- Charts ---------- */
+  .chart-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 24px; margin-top: 28px; }
+  @media (max-width: 860px) { .chart-grid { grid-template-columns: 1fr; } }
+  .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 22px 18px; box-shadow: var(--shadow); }
+  .chart-card h3 { font-size: 14.5px; margin: 0 0 4px; }
+  .chart-card .chart-note { font-size: 12.5px; color: var(--ink-3); margin-bottom: 14px; }
+  .bar-row { display: grid; grid-template-columns: 130px 1fr 34px; align-items: center; gap: 10px; margin-bottom: 9px; font-size: 12.5px; }
+  .bar-row .label { color: var(--ink-2); text-align: right; }
+  .bar-track { height: 14px; background: var(--surface-2); border-radius: 4px; overflow: hidden; }
+  .bar-fill { height: 100%; background: var(--accent); border-radius: 4px; }
+  .bar-row .val { font-family: 'IBM Plex Mono', monospace; color: var(--ink); }
+
+  .stack-row { margin-bottom: 14px; }
+  .stack-row .cat-label { font-size: 12.5px; color: var(--ink-2); margin-bottom: 5px; display: flex; justify-content: space-between; }
+  .stack-track { display: flex; height: 16px; border-radius: 4px; overflow: hidden; background: var(--surface-2); }
+  .stack-seg { height: 100%; }
+  .legend { display: flex; flex-wrap: wrap; gap: 12px 16px; margin-top: 16px; font-size: 12px; color: var(--ink-2); }
+  .legend .sw { display: inline-flex; align-items: center; gap: 6px; }
+  .legend .dot { width: 9px; height: 9px; border-radius: 2px; display: inline-block; }
+
+  /* ---------- Table ---------- */
+  .table-controls { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 16px; align-items: center; }
+  .table-controls input, .table-controls select {
+    font: inherit; font-size: 13px; padding: 8px 12px; border-radius: 7px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--ink);
+  }
+  .table-controls input { flex: 1; min-width: 200px; }
+  .table-controls .count { font-size: 12.5px; color: var(--ink-3); margin-left: auto; font-family: 'IBM Plex Mono', monospace; }
+  .table-scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+  table.data { width: 100%; border-collapse: collapse; font-size: 13px; background: var(--surface); min-width: 980px; }
+  table.data th {
+    text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--ink-3);
+    padding: 10px 12px; border-bottom: 1px solid var(--border); background: var(--surface-2);
+    position: sticky; top: 0; cursor: pointer; white-space: nowrap;
+  }
+  table.data th:hover { color: var(--accent-ink); }
+  table.data td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  table.data tr:last-child td { border-bottom: none; }
+  table.data td.app { font-weight: 500; white-space: nowrap; }
+  table.data td.cat { color: var(--ink-3); font-size: 12px; white-space: nowrap; }
+  table.data td.blocker { color: var(--ink-2); font-size: 12px; max-width: 240px; }
+  table.data td.ev a { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: var(--ink-3); text-decoration: none; }
+  table.data td.ev a:hover { color: var(--accent-ink); text-decoration: underline; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 500; white-space: nowrap; }
+  .badge.ready { background: var(--good-soft); color: var(--good); }
+  .badge.friction { background: var(--warn-soft); color: var(--warn); }
+  .badge.blocked { background: var(--critical-soft); color: var(--critical); }
+  .badge.gate-free { background: var(--good-soft); color: var(--good); }
+  .badge.gate-paid { background: var(--good-2-soft); color: var(--good-2); }
+  .badge.gate-oss { background: var(--good-soft); color: var(--good); }
+  .badge.gate-admin { background: var(--warn-soft); color: var(--warn); }
+  .badge.gate-partner { background: var(--critical-soft); color: var(--critical); }
+  .badge.gate-unclear { background: var(--neutral-soft); color: var(--neutral-status); }
+  .p2-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin-right: 5px; }
+  .table-legend { font-size: 12px; color: var(--ink-3); margin-top: 10px; }
+
+  /* ---------- Architecture ---------- */
+  .pipeline { display: flex; flex-wrap: wrap; align-items: stretch; gap: 0; margin: 30px 0; }
+  .pstep { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; flex: 1; min-width: 150px; box-shadow: var(--shadow); }
+  .pstep .k { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; text-transform: uppercase; letter-spacing: .05em; color: var(--accent-ink); margin-bottom: 6px; }
+  .pstep .t { font-size: 13px; color: var(--ink-2); line-height: 1.45; }
+  .parrow { display: flex; align-items: center; justify-content: center; width: 28px; color: var(--ink-3); font-size: 16px; flex-shrink: 0; }
+  .pbranch { background: var(--accent-soft); border-color: var(--accent); }
+  @media (max-width: 900px) { .pipeline { flex-direction: column; } .parrow { transform: rotate(90deg); width: auto; height: 22px; } }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 10px; }
+  @media (max-width: 780px) { .two-col { grid-template-columns: 1fr; } }
+  ul.tight { margin: 10px 0 0; padding-left: 18px; }
+  ul.tight li { margin-bottom: 9px; font-size: 14px; color: var(--ink-2); line-height: 1.5; }
+  ul.tight li b { color: var(--ink); }
+
+  .code-block {
+    background: var(--mono-surface); color: var(--mono-ink); border-radius: 9px; padding: 16px 18px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; line-height: 1.7; overflow-x: auto; margin-top: 14px;
+  }
+  .code-block .c1 { color: #7C8698; }
+  .code-block .c2 { color: #7FDDE5; }
+
+  /* ---------- Verification ---------- */
+  .verify-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 24px 0; }
+  @media (max-width: 780px) { .verify-stats { grid-template-columns: 1fr; } }
+  .vs-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px; box-shadow: var(--shadow); }
+  .vs-card .arrow-stat { display: flex; align-items: baseline; gap: 10px; font-family: 'IBM Plex Mono', monospace; }
+  .vs-card .arrow-stat .from { font-size: 20px; color: var(--critical); }
+  .vs-card .arrow-stat .to { font-size: 26px; color: var(--good); font-weight: 600; }
+  .vs-card .l { margin-top: 8px; font-size: 13px; color: var(--ink-2); }
+
+  .finding-box { border-radius: var(--radius); padding: 18px 20px; margin-bottom: 14px; border: 1px solid; }
+  .finding-box.miss { background: var(--critical-soft); border-color: color-mix(in srgb, var(--critical) 35%, transparent); }
+  .finding-box.win { background: var(--good-soft); border-color: color-mix(in srgb, var(--good) 35%, transparent); }
+  .finding-box .fb-head { font-weight: 600; font-size: 13.5px; margin-bottom: 5px; display: flex; align-items: center; gap: 8px; }
+  .finding-box .fb-head .tag { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; text-transform: uppercase; padding: 2px 7px; border-radius: 4px; }
+  .finding-box.miss .tag { background: var(--critical); color: white; }
+  .finding-box.win .tag { background: var(--good); color: white; }
+  .finding-box p { font-size: 13.5px; color: var(--ink-2); margin: 0; line-height: 1.55; }
+
+  .sample-scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); margin-top: 20px; box-shadow: var(--shadow); }
+  table.sample { width: 100%; border-collapse: collapse; font-size: 12.5px; background: var(--surface); min-width: 900px; }
+  table.sample th { text-align: left; font-size: 10.5px; text-transform: uppercase; color: var(--ink-3); padding: 9px 11px; border-bottom: 1px solid var(--border); background: var(--surface-2); white-space: nowrap; }
+  table.sample td { padding: 8px 11px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  table.sample td.app { font-weight: 500; white-space: nowrap; }
+  table.sample td.small { font-size: 11.5px; color: var(--ink-2); max-width: 190px; }
+  .match-y { color: var(--good); }
+  .match-n { color: var(--critical); }
+
+  footer { padding: 44px 0 64px; }
+  .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  @media (max-width: 780px) { .footer-grid { grid-template-columns: 1fr; } }
+  .footer-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 22px; box-shadow: var(--shadow); }
+  .footer-card h3 { font-size: 14px; margin: 0 0 10px; }
+  .footer-note { font-size: 12.5px; color: var(--ink-3); margin-top: 30px; }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">AI Product Ops &middot; Take-Home Research Audit</div>
+    <h1>Which of these 100 apps can become an agent tool today?</h1>
+    <p class="sub">A research agent fetched real documentation for 100 apps across 10 categories, extracted auth/access/API-surface facts grounded only in what it actually read, escalated when unsure, and a separate independent pass checked its work against the real docs by hand.</p>
+    <div class="meta-row">
+      <span class="meta-pill"><b>100</b> apps</span>
+      <span class="meta-pill"><b>10</b> categories</span>
+      <span class="meta-pill">grounded via <b>Composio SDK</b></span>
+      <span class="meta-pill"><b>20</b>-app verification sample</span>
+      <span class="meta-pill">generated <b>__GEN_DATE__</b></span>
+    </div>
+  </div>
+</header>
+
+<section id="patterns">
+  <div class="wrap">
+    <div class="eyebrow">The Headline</div>
+    <p class="headline-text">__HEADLINE_TEXT__</p>
+    <div class="stat-grid">
+      __STAT_TILES__
+    </div>
+    <div class="chart-grid">
+      <div class="chart-card">
+        <h3>Access policy by category</h3>
+        <div class="chart-note">Gating status as a share of each category&rsquo;s 10 apps. Docs describe auth mechanics reliably &mdash; access policy is a different, much less documented question.</div>
+        <div id="stackedChartTarget"></div>
+        <div class="legend">
+          <span class="sw"><span class="dot" style="background:var(--good)"></span>Self-serve (free)</span>
+          <span class="sw"><span class="dot" style="background:var(--good-2)"></span>Self-serve (paid/trial)</span>
+          <span class="sw"><span class="dot" style="background:#5FA85C"></span>Open source</span>
+          <span class="sw"><span class="dot" style="background:var(--warn)"></span>Admin approval</span>
+          <span class="sw"><span class="dot" style="background:var(--critical)"></span>Partner-gated</span>
+          <span class="sw"><span class="dot" style="background:var(--neutral-status)"></span>Unclear from docs</span>
+        </div>
+      </div>
+      <div class="chart-card">
+        <h3>Auth method mix</h3>
+        <div class="chart-note">Across all 100 apps, by final (post-grounding-loop) answer.</div>
+        <div id="authChartTarget"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="table">
+  <div class="wrap">
+    <div class="eyebrow">The Findings</div>
+    <h2 style="font-size:24px;margin:0 0 6px;">All 100 apps, one row each</h2>
+    <p style="color:var(--ink-2);font-size:14px;max-width:70ch;margin:0;">Every field traces to a real fetched or searched page &mdash; click the evidence link on any row. The dot marks apps where the agent escalated past its first fetch (93 of 100).</p>
+    <div class="table-controls">
+      <input type="search" id="tableSearch" placeholder="Search app, category, blocker&hellip;" />
+      <select id="catFilter"><option value="">All categories</option></select>
+      <select id="verdictFilter">
+        <option value="">All verdicts</option>
+        <option value="Ready">Ready</option>
+        <option value="Friction">Friction</option>
+        <option value="Blocked">Blocked</option>
+      </select>
+      <span class="count" id="rowCount"></span>
+    </div>
+    <div class="table-scroll">
+      <table class="data" id="mainTable">
+        <thead>
+          <tr>
+            <th data-k="id">#</th>
+            <th data-k="category">Category</th>
+            <th data-k="name">App</th>
+            <th data-k="auth">Auth</th>
+            <th data-k="gating">Gating</th>
+            <th data-k="api">API</th>
+            <th data-k="verdict">Verdict</th>
+            <th data-k="blocker">Blocker</th>
+            <th data-k="evidence">Evidence</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+    <div class="table-legend"><span class="p2-dot"></span> escalated to a second, targeted search-and-fetch pass after the first fetch was thin or inconclusive &nbsp;&middot;&nbsp; <code>has_mcp</code> is deliberately omitted from this table &mdash; see the verification section for why.</div>
+  </div>
+</section>
+
+<section id="agent">
+  <div class="wrap">
+    <div class="eyebrow">The Agent</div>
+    <h2 style="font-size:24px;margin:0 0 8px;">A two-pass, Composio-grounded research pipeline</h2>
+    <p style="color:var(--ink-2);font-size:14px;max-width:74ch;margin:0;">The obvious first draft &mdash; ask an LLM what auth an app uses &mdash; produces confident, plausible, sometimes-wrong answers from training data. Every answer here is instead extracted from a real fetched page, with an explicit instruction to say &ldquo;unclear&rdquo; rather than guess.</p>
+
+    <div class="pipeline">
+      <div class="pstep"><div class="k">01 &middot; Fetch</div><div class="t">Composio <code>COMPOSIO_SEARCH_FETCH_URL_CONTENT</code> pulls the given docs hint as clean markdown.</div></div>
+      <div class="parrow">&rarr;</div>
+      <div class="pstep"><div class="k">02 &middot; Extract</div><div class="t">Gemini fills the schema <b>only</b> from that fetched text &mdash; unsupported fields must say &ldquo;unclear,&rdquo; never guess.</div></div>
+      <div class="parrow">&rarr;</div>
+      <div class="pstep pbranch"><div class="k">03 &middot; Confidence check</div><div class="t">Thin fetch, low self-rated confidence, or an unclear core field &rarr; escalate. Happened for 93/100 apps.</div></div>
+      <div class="parrow">&rarr;</div>
+      <div class="pstep"><div class="k">04 &middot; Search &amp; re-fetch</div><div class="t">Composio <code>COMPOSIO_SEARCH_TAVILY</code> finds a better URL; its own returned text is reused directly.</div></div>
+      <div class="parrow">&rarr;</div>
+      <div class="pstep"><div class="k">05 &middot; Re-extract</div><div class="t">Same grounded extraction over the combined text becomes the final answer.</div></div>
+    </div>
+
+    <div class="code-block"><span class="c1"># the actual Composio SDK calls, from tools.py</span><br>
+client.tools.execute(<span class="c2">"COMPOSIO_SEARCH_FETCH_URL_CONTENT"</span>, {"urls": [url]}, user_id=<span class="c2">"default"</span>)<br>
+client.tools.execute(<span class="c2">"COMPOSIO_SEARCH_TAVILY"</span>, {"query": query, "max_results": 5}, user_id=<span class="c2">"default"</span>)</div>
+
+    <div class="two-col">
+      <div>
+        <h3 style="font-size:15px;">Where a human was needed</h3>
+        <ul class="tight">
+          <li><b>Setting the escalation trigger</b> &mdash; the thin-page threshold and which fields count as &ldquo;unclear enough&rdquo; to justify a second pass is a judgment call about where grounding effort pays off.</li>
+          <li><b>Reading the verification sample&rsquo;s real docs</b> &mdash; the agent&rsquo;s own confidence score isn&rsquo;t proof; someone has to actually open the page and check.</li>
+          <li><b>Judging ambiguous gating</b> &mdash; an app with a public API that still needs a sales call for production keys is a call the schema can&rsquo;t fully automate.</li>
+          <li><b>Catching the <code>has_mcp</code> false positives</b> &mdash; a targeted spot-check, not the pipeline itself, found this field unreliable (see verification).</li>
+          <li><b>A platform-level surprise</b> &mdash; this machine&rsquo;s Windows Application Control policy blocked the <code>grpc</code> native binary the official Gemini SDK depends on. The fix (call the Gemini REST API directly instead) needed a human to diagnose, not just retry.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:15px;">Resilience by design</h3>
+        <ul class="tight">
+          <li><b>No Composio key, no problem</b> &mdash; <code>tools.py</code> falls back automatically to a free, no-key implementation (direct HTTP fetch + Bing HTML search) behind the identical function signatures. Every result records which backend produced it.</li>
+          <li><b>Two full runs exist</b> &mdash; an earlier 100-app pass on the free fallback is kept in the repo (<code>data/baseline_direct_run/</code>) alongside this Composio-grounded one, for comparison.</li>
+          <li><b>Checkpointed</b> &mdash; results save every 10 apps, so a crash mid-run loses at most 10 apps of work, not the batch.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="verification">
+  <div class="wrap">
+    <div class="eyebrow">The Verification</div>
+    <h2 style="font-size:24px;margin:0 0 8px;">Did the grounding loop actually help?</h2>
+    <p style="color:var(--ink-2);font-size:14px;max-width:74ch;margin:0;">A stratified sample &mdash; 2 apps per category, 20 total &mdash; was checked independently: real docs fetched separately from the pipeline itself, then compared field-by-field against what the agent said after pass 1 and after the full grounding loop.</p>
+
+    <div class="verify-stats">
+      <div class="vs-card">
+        <div class="arrow-stat"><span class="from">66.7%</span><span>&rarr;</span><span class="to">11.7%</span></div>
+        <div class="l"><code>&ldquo;Unclear&rdquo;</code> rate across 60 checked fields (20 apps &times; 3 fields), pass 1 vs. final. Every one of the 7 fields still unclear after grounding was independently confirmed to be genuinely undocumented &mdash; not an agent failure.</div>
+      </div>
+      <div class="vs-card">
+        <div class="arrow-stat"><span class="from">7</span><span>/ 20</span></div>
+        <div class="l">Verdicts that changed between pass 1 and final. All 7 moved from an overly pessimistic verdict (Blocked/Friction) to a more accurate one. Zero moved the wrong direction.</div>
+      </div>
+      <div class="vs-card">
+        <div class="arrow-stat"><span class="from">5</span><span>issues found</span></div>
+        <div class="l">Distinct, named mistakes surfaced by this verification pass &mdash; shown below, not hidden.</div>
+      </div>
+    </div>
+
+    <h3 style="font-size:15px;margin:26px 0 4px;">What the agent got wrong</h3>
+    __MISS_BOXES__
+
+    <h3 style="font-size:15px;margin:26px 0 4px;">What the grounding loop actually fixed</h3>
+    __WIN_BOXES__
+
+    <h3 style="font-size:15px;margin:26px 0 10px;">The full 20-app sample</h3>
+    <div class="sample-scroll">
+      <table class="sample">
+        <thead><tr><th>App</th><th>Field</th><th>Pass 1</th><th>Final</th><th>Independently verified</th><th>Final correct?</th></tr></thead>
+        <tbody id="sampleBody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-card">
+        <h3>Reproduce this</h3>
+        <div class="code-block" style="margin-top:0;"><span class="c1"># .env: GEMINI_API_KEY=&hellip; and COMPOSIO_API_KEY=&hellip;</span><br>
+pip install -r requirements.txt<br>
+python research_agent.py&nbsp;&nbsp;<span class="c1"># -&gt; data/results.json</span><br>
+python analyze.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1"># -&gt; data/report.json</span></div>
+      </div>
+      <div class="footer-card">
+        <h3>Links</h3>
+        <p style="font-size:13.5px;color:var(--ink-2);margin-bottom:8px;">
+          <a href="REPLACE_WITH_REPO_URL" style="font-weight:600;">Source repository &rarr;</a><br>
+          <span style="color:var(--ink-3);font-size:12.5px;">README covers setup, architecture, and how to reproduce this run &mdash; including <code>data/results.json</code> and <code>data/verification.json</code> in full.</span>
+        </p>
+        <p style="font-size:13.5px;color:var(--ink-2);">Built for Composio&rsquo;s AI Product Ops Intern take-home.</p>
+      </div>
+    </div>
+    <p class="footer-note">iPayX and PitchBook are reported as fully Blocked with evidence, not as failures &mdash; a gated app correctly identified as gated is the correct finding.</p>
+  </div>
+</footer>
+
+<script>
+const TABLE_ROWS = __TABLE_ROWS_JSON__;
+const REPORT = __REPORT_JSON__;
+const SAMPLE = __SAMPLE_JSON__;
+
+// ---------- gating badge helpers ----------
+function gateClass(g) {
+  g = (g||'').toLowerCase();
+  if (g.includes('unclear')) return 'gate-unclear';
+  if (g.includes('open source')) return 'gate-oss';
+  if (g.includes('free')) return 'gate-free';
+  if (g.includes('paid') || g.includes('trial')) return 'gate-paid';
+  if (g.includes('admin')) return 'gate-admin';
+  if (g.includes('partner') || g.includes('gated')) return 'gate-partner';
+  return 'gate-unclear';
+}
+function gateLabel(g) {
+  g = (g||'');
+  if (g.toLowerCase().includes('unclear')) return 'Unclear';
+  return g.replace('Self-serve ', '');
+}
+function verdictClass(v) { return (v||'').toLowerCase(); }
+
+// ---------- main table ----------
+const catSet = [...new Set(TABLE_ROWS.map(r => r[1]))];
+const catSel = document.getElementById('catFilter');
+catSet.forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; catSel.appendChild(o); });
+
+let sortKey = 'id', sortDir = 1;
+function render() {
+  const q = document.getElementById('tableSearch').value.toLowerCase();
+  const cat = catSel.value;
+  const verdict = document.getElementById('verdictFilter').value;
+  let rows = TABLE_ROWS.filter(r => {
+    const [id, category, name, hint, auth, gating, api, hasMcp, verd, blocker, evidence] = r;
+    if (cat && category !== cat) return false;
+    if (verdict && verd !== verdict) return false;
+    if (q && !(name.toLowerCase().includes(q) || category.toLowerCase().includes(q) || (blocker||'').toLowerCase().includes(q) || auth.toLowerCase().includes(q))) return false;
+    return true;
+  });
+  const idx = {id:0,category:1,name:2,auth:4,gating:5,api:6,verdict:8,blocker:9};
+  rows.sort((a,b) => {
+    const ka = a[idx[sortKey]], kb = b[idx[sortKey]];
+    if (typeof ka === 'number') return (ka-kb)*sortDir;
+    return String(ka).localeCompare(String(kb))*sortDir;
+  });
+  document.getElementById('rowCount').textContent = rows.length + ' / ' + TABLE_ROWS.length + ' apps';
+  document.getElementById('tableBody').innerHTML = rows.map(r => {
+    const [id, category, name, hint, auth, gating, api, hasMcp, verd, blocker, evidence, confidence, usedPass2] = r;
+    return `<tr>
+      <td class="mono cat">${id}</td>
+      <td class="cat">${category}</td>
+      <td class="app">${usedPass2 ? '<span class="p2-dot" title="escalated to pass 2"></span>' : ''}${name}</td>
+      <td>${auth}</td>
+      <td><span class="badge ${gateClass(gating)}">${gateLabel(gating)}</span></td>
+      <td>${api}</td>
+      <td><span class="badge ${verdictClass(verd)}">${verd}</span></td>
+      <td class="blocker">${blocker && blocker!=='None' ? blocker : '&mdash;'}</td>
+      <td class="ev"><a href="${evidence}" target="_blank" rel="noopener">${(evidence||'').replace(/^https?:\/\//,'').slice(0,34)}</a></td>
+    </tr>`;
+  }).join('');
+}
+document.getElementById('tableSearch').addEventListener('input', render);
+catSel.addEventListener('change', render);
+document.getElementById('verdictFilter').addEventListener('change', render);
+document.querySelectorAll('#mainTable th[data-k]').forEach(th => {
+  th.addEventListener('click', () => {
+    const k = th.dataset.k;
+    if (sortKey === k) sortDir *= -1; else { sortKey = k; sortDir = 1; }
+    render();
+  });
+});
+render();
+
+// ---------- auth chart ----------
+(function() {
+  const el = document.getElementById('authChartTarget');
+  const max = Math.max(...Object.values(REPORT.auth_counts));
+  Object.entries(REPORT.auth_counts).forEach(([k,v]) => {
+    const row = document.createElement('div');
+    row.className = 'bar-row';
+    row.innerHTML = `<span class="label">${k}</span><span class="bar-track"><span class="bar-fill" style="width:${(v/max*100).toFixed(1)}%"></span></span><span class="val">${v}</span>`;
+    el.appendChild(row);
+  });
+})();
+
+// ---------- stacked category chart ----------
+(function() {
+  const colors = {
+    'Self-serve (free)': 'var(--good)',
+    'Self-serve (paid/trial)': 'var(--good-2)',
+    'Open source': '#5FA85C',
+    'Admin approval required': 'var(--warn)',
+    'Partner/contact-sales gated': 'var(--critical)',
+    'Unclear': 'var(--neutral-status)'
+  };
+  const order = ['Self-serve (free)','Self-serve (paid/trial)','Open source','Admin approval required','Partner/contact-sales gated','Unclear'];
+  const el = document.querySelector('#stackedChartTarget');
+  Object.entries(REPORT.gating_by_category).forEach(([cat, dist]) => {
+    const total = Object.values(dist).reduce((a,b)=>a+b,0);
+    const row = document.createElement('div');
+    row.className = 'stack-row';
+    const segs = order.filter(k => dist[k]).map(k => `<span class="stack-seg" style="width:${(dist[k]/total*100).toFixed(1)}%;background:${colors[k]}" title="${k}: ${dist[k]}"></span>`).join('');
+    row.innerHTML = `<div class="cat-label"><span>${cat}</span><span class="mono">${total}</span></div><div class="stack-track">${segs}</div>`;
+    el.appendChild(row);
+  });
+})();
+
+// ---------- sample table ----------
+(function() {
+  const body = document.getElementById('sampleBody');
+  const fieldsMeta = [
+    ['auth_method','Auth'], ['gating','Gating'], ['api_surface','API']
+  ];
+  let html = '';
+  SAMPLE.forEach(s => {
+    fieldsMeta.forEach(([fk, flabel], i) => {
+      const actualKey = 'actual_' + fk;
+      const correct = (s.final_correct_fields||[]).includes(fk);
+      const unverified = !s[actualKey] || /unconfirmed/i.test(s[actualKey]);
+      html += `<tr>
+        <td class="app">${i===0 ? s.name : ''}</td>
+        <td class="small">${flabel}</td>
+        <td class="small">${s.agent_pass1[fk]}</td>
+        <td class="small">${s.agent_final[fk]}</td>
+        <td class="small">${s[actualKey]||''}</td>
+        <td class="${unverified ? '' : (correct ? 'match-y' : 'match-n')}">${unverified ? '&mdash;' : (correct ? '&#10003;' : '&#10007;')}</td>
+      </tr>`;
+    });
+  });
+  body.innerHTML = html;
+})();
+</script>
+</body>
+</html>

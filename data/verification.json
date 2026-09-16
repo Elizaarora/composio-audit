@@ -1,0 +1,61 @@
+{
+  "methodology": "20-app stratified sample (2 per category, seed=42). For each, the agent's pass-1 and final (post-pass-2) answers were compared against real docs fetched independently (Claude + WebFetch, separate from the research pipeline itself), not against the pipeline's own self-reported confidence.",
+  "field_scoring": {
+    "auth_method": {"confirmed_correct": 13, "plausible_unverified": 4, "miss": 2, "no_signal": 1},
+    "gating": {"confirmed_correct": 15, "plausible_unverified": 4, "miss": 1, "no_signal": 0},
+    "api_surface": {"confirmed_correct": 11, "plausible_unverified": 7, "miss": 2, "no_signal": 0}
+  },
+  "unclear_rate": {
+    "pass1_unclear_of_60_checks": 40,
+    "final_unclear_of_60_checks": 7,
+    "note": "60 = 20 apps x 3 fields (auth_method, gating, api_surface). The 7 fields still 'Unclear' after pass 2 were independently checked too -- in every one of those 7 cases, the real docs genuinely don't state the answer either (it's a pricing-page question, not a docs-page one), so the agent's caution was correct, not a failure."
+  },
+  "verdict_changes": {
+    "changed_pass1_to_final": 7,
+    "total_sampled": 20,
+    "note": "All 7 changes went from an overly pessimistic pass-1 verdict (Blocked/Friction) to a more accurate final verdict after pass 2 found real information. Zero changes went the other direction."
+  },
+  "confirmed_misses": [
+    {
+      "apps": ["Meta Ads", "Threads (Meta)"],
+      "field": "api_surface",
+      "issue": "Labeled Meta's 'Graph API' as 'GraphQL'. They're not the same thing -- Meta's Graph API is a REST-like custom API that predates and isn't built on the GraphQL query language spec. A plausible name-based confusion, wrong both times it occurred.",
+      "root_cause": "systematic"
+    },
+    {
+      "apps": ["Jira"],
+      "field": "auth_method",
+      "issue": "Final answer lists six auth methods (Basic auth, OAuth, OAuth 1.0a, OAuth 2.0, Personal access token, Cookie-based) as if all apply to Jira uniformly. Several of those (OAuth 1.0a, PATs, cookie-based auth) are Jira Server/Data Center specific, not Jira Cloud REST API methods -- the pass-2 search pulled a generic Atlassian auth overview covering multiple deployment types instead of one scoped to Jira Cloud.",
+      "root_cause": "search surfaced an under-scoped source"
+    },
+    {
+      "apps": ["Smartsheet"],
+      "field": "gating",
+      "issue": "Final answer claims 'Self-serve (paid/trial)' but neither the agent's own fetched text nor an independent check of Smartsheet's docs states pricing/access terms. This is the one case in the sample where the model appears to have asserted more than its source text actually supported, instead of saying 'Unclear.'",
+      "root_cause": "ungrounded assertion"
+    },
+    {
+      "apps": ["PitchBook"],
+      "field": "evidence_url",
+      "issue": "Pass-2 search surfaced dlthub.com's community data-connector docs (a third-party integration guide) rather than any PitchBook-official source, and the agent cited it as evidence. The final verdict (Blocked, partner-gated) happens to be correct -- PitchBook genuinely has no self-serve API -- but the auth_method claim ('API key') is sourced from an unofficial reverse-engineered connector, not PitchBook's own docs.",
+      "root_cause": "search surfaced an unofficial source"
+    }
+  ],
+  "field_reliability_notes": [
+    {
+      "field": "has_mcp",
+      "issue": "The pipeline flagged 27 of 100 apps as having a mentioned MCP server. This field was NOT part of the 20-app stratified sample, so it got a separate targeted spot-check: 3 of the 27 'Yes' claims (Pumble, fanbasis, and Coda) were checked directly against their own cited evidence URLs. Two were confirmed false -- neither Pumble's nor fanbasis's cited page mentions MCP at all. The third (Coda) couldn't be re-checked at all because its evidence URL now redirects elsewhere. This is a real, disclosed limitation: has_mcp should be read as 'the model's exploratory guess, unreliable,' not a verified finding, and the 27-app figure is not trustworthy as reported. Likely cause: MCP is widely enough discussed in 2026 that the model leans toward inferring it even from adjacent context (automation/integration language) rather than an explicit statement.",
+      "spot_check_result": "2 of 3 checked were false positives"
+    }
+  ],
+  "unverifiable_in_sample": {
+    "apps": ["Clay", "Consensus"],
+    "note": "Independent verification hit the same wall the agent did: both docs sites returned 403 Forbidden to a plain fetch. This is real-world friction, not a pipeline artifact -- some docs are simply bot-gated."
+  },
+  "confirmed_wins": [
+    {"app": "Pylon", "note": "Pass 1 incorrectly claimed 'Partner/contact-sales gated' with no supporting evidence. Pass 2 corrected this to an honest 'Unclear from fetched text' -- a real self-correction, not just a lucky guess."},
+    {"app": "DataForSEO", "note": "Pass 1 left auth_method unclear; pass 2 correctly resolved it to 'Basic auth' (HTTP Basic Auth using the account login as username), confirmed independently."},
+    {"app": "YouTube Transcript", "note": "Pass 1 left gating unclear; pass 2 correctly resolved it to 'Self-serve (free)', matching the vendor's own '100 free credits, no card required' language."},
+    {"app": "WooCommerce", "note": "Pass 1 was already fully correct on all three fields (no pass 2 needed) -- confirms the escalation trigger isn't firing needlessly when a hint page already has the answer."}
+  ]
+}

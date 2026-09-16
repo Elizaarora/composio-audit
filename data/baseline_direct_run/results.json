@@ -1,0 +1,5180 @@
+[
+  {
+    "id": 1,
+    "category": "CRM and Sales",
+    "name": "Salesforce",
+    "hint": "salesforce.com",
+    "pass1": {
+      "fetch_status": 403,
+      "char_count": 0,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "No fetched text available",
+        "evidence_url": "https://www.salesforce.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Salesforce API documentation authentication",
+      "candidate_urls": [
+        "https://login.salesforce.com/",
+        "https://www.salesforce.com/in/"
+      ],
+      "extraction": {
+        "category": "CRM",
+        "description": "Salesforce login and customer relationship management platform",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "No API details in text",
+        "evidence_url": "https://login.salesforce.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "CRM",
+      "description": "Salesforce login and customer relationship management platform",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "No API details in text",
+      "evidence_url": "https://login.salesforce.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 2,
+    "category": "CRM and Sales",
+    "name": "HubSpot",
+    "hint": "hubspot.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 5482,
+      "fetch_error": null,
+      "extraction": {
+        "category": "CRM",
+        "description": "HubSpot brings together marketing, sales, service, and customer data on a single platform powered by AI.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "No API or auth details found",
+        "evidence_url": "https://www.hubspot.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "HubSpot API documentation authentication",
+      "candidate_urls": [
+        "https://www.hubspot.com/",
+        "https://app.hubspot.com/login"
+      ],
+      "extraction": {
+        "category": "CRM",
+        "description": "HubSpot aligns marketing, sales, service, and customer data on a single agentic platform powered by AI.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "No public API or auth details in text",
+        "evidence_url": "https://www.hubspot.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "CRM",
+      "description": "HubSpot aligns marketing, sales, service, and customer data on a single agentic platform powered by AI.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "No public API or auth details in text",
+      "evidence_url": "https://www.hubspot.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 3,
+    "category": "CRM and Sales",
+    "name": "Pipedrive",
+    "hint": "pipedrive.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 14366,
+      "fetch_error": null,
+      "extraction": {
+        "category": "CRM",
+        "description": "Sales CRM and pipeline management software with built-in AI and workflow automations.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "No public API found",
+        "has_mcp": "No",
+        "buildability_verdict": "Blocked",
+        "blocker": "No public API found in text",
+        "evidence_url": "https://www.pipedrive.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Pipedrive API documentation authentication",
+      "candidate_urls": [
+        "https://www.pipedrive.com/",
+        "https://www.pipedrive.com/en/products"
+      ],
+      "extraction": {
+        "category": "CRM",
+        "description": "Sales CRM and pipeline management software with built-in AI and workflow automation.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "No public API details found in text",
+        "evidence_url": "https://www.pipedrive.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "CRM",
+      "description": "Sales CRM and pipeline management software with built-in AI and workflow automation.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Friction",
+      "blocker": "No public API details found in text",
+      "evidence_url": "https://www.pipedrive.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 4,
+    "category": "CRM and Sales",
+    "name": "Attio",
+    "hint": "attio.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 10113,
+      "fetch_error": null,
+      "extraction": {
+        "category": "CRM",
+        "description": "Attio is a CRM platform that builds pipeline, advances deals, and orchestrates revenue agents with workflows.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Missing API and auth documentation",
+        "evidence_url": "https://attio.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Attio API documentation authentication",
+      "candidate_urls": [
+        "https://www.frederictontoyota.com/en",
+        "https://www.frederictontoyota.com/en/new-inventory"
+      ],
+      "extraction": {
+        "category": "CRM",
+        "description": "Attio is a CRM that builds pipeline, advances deals, and grows accounts using revenue agents and workflows.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Missing API and auth documentation",
+        "evidence_url": "https://attio.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "CRM",
+      "description": "Attio is a CRM that builds pipeline, advances deals, and grows accounts using revenue agents and workflows.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Friction",
+      "blocker": "Missing API and auth documentation",
+      "evidence_url": "https://attio.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 5,
+    "category": "CRM and Sales",
+    "name": "Twenty",
+    "hint": "twenty.com (open-source CRM)",
+    "pass1": {
+      "fetch_status": null,
+      "char_count": 0,
+      "fetch_error": "Failed to parse: Host 'twenty.com (open-source CRM)' contains invalid character ' '",
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text available",
+        "evidence_url": "https://twenty.com",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Twenty API documentation authentication",
+      "candidate_urls": [
+        "https://twenty.com/",
+        "https://twenty.com/product"
+      ],
+      "extraction": {
+        "category": "CRM",
+        "description": "An open-source CRM that gives technical teams the building blocks for a custom CRM.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Open source",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://twenty.com",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "CRM",
+      "description": "An open-source CRM that gives technical teams the building blocks for a custom CRM.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Open source",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://twenty.com",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 6,
+    "category": "CRM and Sales",
+    "name": "Podio",
+    "hint": "podio.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 5875,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Work Management Platform",
+        "description": "Unify and automate work with no-code tools, flexible workflows and customizable business solutions.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "API and auth details unclear",
+        "evidence_url": "https://podio.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Podio API documentation authentication",
+      "candidate_urls": [
+        "https://podio.com/login",
+        "https://www.podio.com/"
+      ],
+      "extraction": {
+        "category": "Work Management Platform",
+        "description": "Unify and automate work with no-code tools, flexible workflows and customizable business solutions.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Authentication method unclear",
+        "evidence_url": "https://podio.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Work Management Platform",
+      "description": "Unify and automate work with no-code tools, flexible workflows and customizable business solutions.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "REST",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Friction",
+      "blocker": "Authentication method unclear",
+      "evidence_url": "https://podio.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 7,
+    "category": "CRM and Sales",
+    "name": "Zoho CRM",
+    "hint": "zoho.com/crm",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 5696,
+      "fetch_error": null,
+      "extraction": {
+        "category": "CRM",
+        "description": "An AI-powered CRM software for sales automation, workflow management, and team collaboration.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Lack of API surface and authentication details in text",
+        "evidence_url": "https://www.zoho.com/en-in/crm/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Zoho CRM API documentation authentication",
+      "candidate_urls": [
+        "https://www.zoho.com/login.html",
+        "https://www.zoho.com/"
+      ],
+      "extraction": {
+        "category": "CRM",
+        "description": "Top-rated AI-powered Sales CRM software with automation, custom modules, and multi-agent platforms.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "No public API surface found in text",
+        "evidence_url": "https://www.zoho.com/en-in/crm/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "CRM",
+      "description": "Top-rated AI-powered Sales CRM software with automation, custom modules, and multi-agent platforms.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "No public API surface found in text",
+      "evidence_url": "https://www.zoho.com/en-in/crm/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 8,
+    "category": "CRM and Sales",
+    "name": "Close",
+    "hint": "close.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 4300,
+      "fetch_error": null,
+      "extraction": {
+        "category": "CRM",
+        "description": "A sales CRM built for calling, emailing, texting, automation, and an AI sales agent named Chloe.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://close.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Close API documentation authentication",
+      "candidate_urls": [
+        "https://close.com/",
+        "https://en.wikipedia.org/wiki/Close_(2022_film)"
+      ],
+      "extraction": {
+        "category": "CRM",
+        "description": "Close is a sales CRM built for calling, emailing, texting, automation, and action with an integrated AI sales agent named Chloe.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://close.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "CRM",
+      "description": "Close is a sales CRM built for calling, emailing, texting, automation, and action with an integrated AI sales agent named Chloe.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "REST",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://close.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 9,
+    "category": "CRM and Sales",
+    "name": "Copper",
+    "hint": "copper.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 7627,
+      "fetch_error": null,
+      "extraction": {
+        "category": "CRM",
+        "description": "CRM software solutions company designed for service businesses and recommended for Google Workspace.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "No API surface details provided",
+        "evidence_url": "https://www.copper.com:443/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Copper API documentation authentication",
+      "candidate_urls": [
+        "https://en.wikipedia.org/wiki/Copper",
+        "https://www.britannica.com/science/copper"
+      ],
+      "extraction": {
+        "category": "CRM",
+        "description": "CRM software solutions company for service businesses, recommended for Google Workspace.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "No",
+        "buildability_verdict": "Friction",
+        "blocker": "No API details or authentication method found in text",
+        "evidence_url": "https://www.copper.com:443/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "CRM",
+      "description": "CRM software solutions company for service businesses, recommended for Google Workspace.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "No",
+      "buildability_verdict": "Friction",
+      "blocker": "No API details or authentication method found in text",
+      "evidence_url": "https://www.copper.com:443/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 10,
+    "category": "CRM and Sales",
+    "name": "DealCloud",
+    "hint": "api.docs.dealcloud.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 1729,
+      "fetch_error": null,
+      "extraction": {
+        "category": "CRM",
+        "description": "DealCloud developer documentation providing API access, SDKs, and integration guides for the platform.",
+        "auth_method": "API Keys",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://api.docs.dealcloud.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "DealCloud API documentation authentication",
+      "candidate_urls": [
+        "https://app.dealcloud.com/",
+        "https://sand-app.dealcloud.com/"
+      ],
+      "extraction": {
+        "category": "CRM",
+        "description": "DealCloud developer documentation and API reference for accessing platform features, schemas, data, and user management.",
+        "auth_method": "API Keys",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://api.docs.dealcloud.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "CRM",
+      "description": "DealCloud developer documentation and API reference for accessing platform features, schemas, data, and user management.",
+      "auth_method": "API Keys",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://api.docs.dealcloud.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 11,
+    "category": "Support and Helpdesk",
+    "name": "Zendesk",
+    "hint": "zendesk.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 16076,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Support",
+        "description": "An AI-powered customer and employee service platform for managing inquiries, ticketing, and resolution automation.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Unclear API surface and authentication methods",
+        "evidence_url": "https://www.zendesk.com/in/#georedirect",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Zendesk API documentation authentication",
+      "candidate_urls": [
+        "https://www.zendesk.com/",
+        "https://www.zendesk.com/login/"
+      ],
+      "extraction": {
+        "category": "Support",
+        "description": "An AI-powered customer and employee service platform for managing inquiries, ticketing, and autonomous resolutions.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "No API or auth details provided",
+        "evidence_url": "https://www.zendesk.com/in/#georedirect",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Support",
+      "description": "An AI-powered customer and employee service platform for managing inquiries, ticketing, and autonomous resolutions.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Friction",
+      "blocker": "No API or auth details provided",
+      "evidence_url": "https://www.zendesk.com/in/#georedirect",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 12,
+    "category": "Support and Helpdesk",
+    "name": "Intercom",
+    "hint": "intercom.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 7358,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Support",
+        "description": "A complete system for human and AI customer service featuring a helpdesk and Fin AI Agent.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Friction",
+        "blocker": "Unclear API details",
+        "evidence_url": "https://www.intercom.com/",
+        "confidence": "Medium"
+      }
+    },
+    "pass2": {
+      "search_query": "Intercom API documentation authentication",
+      "candidate_urls": [
+        "https://www.intercom.com/",
+        "https://www.intercom.com/intercom2"
+      ],
+      "extraction": {
+        "category": "Support",
+        "description": "A complete system for human and AI customer service featuring an AI-powered helpdesk and Fin AI Agent.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Friction",
+        "blocker": "Authentication and API methods not fully detailed in text",
+        "evidence_url": "https://www.intercom.com/",
+        "confidence": "Medium"
+      }
+    },
+    "final": {
+      "category": "Support",
+      "description": "A complete system for human and AI customer service featuring an AI-powered helpdesk and Fin AI Agent.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "REST",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Friction",
+      "blocker": "Authentication and API methods not fully detailed in text",
+      "evidence_url": "https://www.intercom.com/",
+      "confidence": "Medium"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 13,
+    "category": "Support and Helpdesk",
+    "name": "Freshdesk",
+    "hint": "freshdesk.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 3582,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Support",
+        "description": "AI-powered customer service software providing AI agents, agent copilot, workflows, and customer history management.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Friction",
+        "blocker": "Lack of explicit API documentation details in text",
+        "evidence_url": "https://www.freshworks.com/freshdesk/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Freshdesk API documentation authentication",
+      "candidate_urls": [
+        "https://www.freshworks.com/freshdesk/",
+        "https://support.freshdesk.com/support/home"
+      ],
+      "extraction": {
+        "category": "Support",
+        "description": "AI-powered customer service software and helpdesk ticketing system",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Friction",
+        "blocker": "Auth method and API details unclear from fetched text",
+        "evidence_url": "https://www.freshworks.com/freshdesk/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Support",
+      "description": "AI-powered customer service software and helpdesk ticketing system",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Friction",
+      "blocker": "Auth method and API details unclear from fetched text",
+      "evidence_url": "https://www.freshworks.com/freshdesk/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 14,
+    "category": "Support and Helpdesk",
+    "name": "Front",
+    "hint": "front.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 5547,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Support",
+        "description": "Customer service and operations platform that brings teams, conversations, and AI into one coordinated system.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Lack of API surface details in text",
+        "evidence_url": "https://front.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Front API documentation authentication",
+      "candidate_urls": [
+        "https://front.com/",
+        "https://front.com/download"
+      ],
+      "extraction": {
+        "category": "Support",
+        "description": "Customer service platform with collaborative shared inboxes, ticketing, and AI capabilities.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Lack of clear API documentation in text",
+        "evidence_url": "https://front.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Support",
+      "description": "Customer service platform with collaborative shared inboxes, ticketing, and AI capabilities.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Friction",
+      "blocker": "Lack of clear API documentation in text",
+      "evidence_url": "https://front.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 15,
+    "category": "Support and Helpdesk",
+    "name": "Pylon",
+    "hint": "usepylon.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 5615,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Support",
+        "description": "An agentic B2B support platform that lets humans and AI agents collaborate on customer work.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Partner/contact-sales gated",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Friction",
+        "blocker": "No API details available",
+        "evidence_url": "https://www.usepylon.com/",
+        "confidence": "Medium"
+      }
+    },
+    "pass2": {
+      "search_query": "Pylon API documentation authentication",
+      "candidate_urls": [
+        "https://www.zhihu.com/question/2070082903229347029",
+        "https://gist.github.com/"
+      ],
+      "extraction": {
+        "category": "Support",
+        "description": "An agentic B2B support platform letting humans and AI agents collaborate on customer support.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Partner/contact-sales gated",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Friction",
+        "blocker": "Lack of clear API documentation in fetched text",
+        "evidence_url": "https://www.usepylon.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Support",
+      "description": "An agentic B2B support platform letting humans and AI agents collaborate on customer support.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Partner/contact-sales gated",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Friction",
+      "blocker": "Lack of clear API documentation in fetched text",
+      "evidence_url": "https://www.usepylon.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 16,
+    "category": "Support and Helpdesk",
+    "name": "LiveAgent",
+    "hint": "liveagent.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 12038,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Support",
+        "description": "LiveAgent combines an all-in-one customer service platform with AI chatbot, live chat, ticketing, and call center.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "No public API or auth info found",
+        "evidence_url": "https://www.liveagent.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "LiveAgent API documentation authentication",
+      "candidate_urls": [
+        "https://www.asus.com/us/",
+        "https://www.asus.com/us/laptops/for-home/all-series/"
+      ],
+      "extraction": {
+        "category": "Support",
+        "description": "LiveAgent combines an all-in-one customer service platform with AI chatbot, live chat, ticketing, and call center.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "No public API or auth details found in text",
+        "evidence_url": "https://www.liveagent.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Support",
+      "description": "LiveAgent combines an all-in-one customer service platform with AI chatbot, live chat, ticketing, and call center.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "No public API or auth details found in text",
+      "evidence_url": "https://www.liveagent.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 17,
+    "name": "Plain",
+    "category": "Support and Helpdesk",
+    "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=30)"
+  },
+  {
+    "id": 18,
+    "name": "Help Scout",
+    "category": "Support and Helpdesk",
+    "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=30)"
+  },
+  {
+    "id": 19,
+    "category": "Support and Helpdesk",
+    "name": "Gorgias",
+    "hint": "gorgias.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 4733,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Support",
+        "description": "Conversational AI platform and helpdesk for ecommerce with native Shopify integration and omni-channel inbox.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Unclear API surface and auth methods in text",
+        "evidence_url": "https://www.gorgias.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Gorgias API documentation authentication",
+      "candidate_urls": [
+        "https://www.zhihu.com/question/27157954",
+        "https://www.zhihu.com/question/51613957"
+      ],
+      "extraction": {
+        "category": "Support",
+        "description": "Conversational AI platform and helpdesk for ecommerce with unified inbox and Shopify integration.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Unclear API documentation and auth details",
+        "evidence_url": "https://www.gorgias.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Support",
+      "description": "Conversational AI platform and helpdesk for ecommerce with unified inbox and Shopify integration.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Friction",
+      "blocker": "Unclear API documentation and auth details",
+      "evidence_url": "https://www.gorgias.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 20,
+    "name": "Gladly",
+    "category": "Support and Helpdesk",
+    "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=30)"
+  },
+  {
+    "id": 21,
+    "name": "Slack",
+    "category": "Communications and Messaging",
+    "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=30)"
+  },
+  {
+    "id": 22,
+    "category": "Communications and Messaging",
+    "name": "Twilio",
+    "hint": "twilio.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 10128,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Messaging",
+        "description": "Provides conversational AI and APIs for SMS, email, voice, and messaging channels.",
+        "auth_method": "Account SID and Auth Token",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://www.twilio.com/en-us",
+        "confidence": "High"
+      }
+    },
+    "pass2": null,
+    "final": {
+      "category": "Messaging",
+      "description": "Provides conversational AI and APIs for SMS, email, voice, and messaging channels.",
+      "auth_method": "Account SID and Auth Token",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "REST",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://www.twilio.com/en-us",
+      "confidence": "High"
+    },
+    "used_pass2": false
+  },
+  {
+    "id": 23,
+    "category": "Communications and Messaging",
+    "name": "Zoho Cliq",
+    "hint": "zoho.com/cliq",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 5071,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Messaging",
+        "description": "Team chat and communication software for businesses offering organization, automation, and AI features.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Lack of API surface and auth details in text",
+        "evidence_url": "https://www.zoho.com/cliq/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Zoho Cliq API documentation authentication",
+      "candidate_urls": [
+        "https://www.zoho.com/login.html",
+        "https://www.zoho.com/"
+      ],
+      "extraction": {
+        "category": "Messaging",
+        "description": "Team chat and communication software for businesses.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "No public API details found in text",
+        "evidence_url": "https://www.zoho.com/cliq/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Messaging",
+      "description": "Team chat and communication software for businesses.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "No public API details found in text",
+      "evidence_url": "https://www.zoho.com/cliq/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 24,
+    "category": "Communications and Messaging",
+    "name": "Lark (Larksuite)",
+    "hint": "open.larksuite.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 14,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Messaging",
+        "description": "Lark Developer platform for building applications and integrations.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Insufficient text data to evaluate",
+        "evidence_url": "https://open.larksuite.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Lark (Larksuite) API documentation authentication",
+      "candidate_urls": [
+        "https://www.larksuite.com/en_us/download",
+        "https://www.larksuite.com/messages"
+      ],
+      "extraction": {
+        "category": "Messaging",
+        "description": "Lark Developer portal",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Insufficient text content",
+        "evidence_url": "https://open.larksuite.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Messaging",
+      "description": "Lark Developer portal",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "Insufficient text content",
+      "evidence_url": "https://open.larksuite.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 25,
+    "category": "Communications and Messaging",
+    "name": "Pumble",
+    "hint": "pumble.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 6645,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Messaging",
+        "description": "An all-in-one team communication and business collaboration app.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Friction",
+        "blocker": "Missing API documentation and auth details",
+        "evidence_url": "https://pumble.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Pumble API documentation authentication",
+      "candidate_urls": [
+        "https://pumble.com/",
+        "https://mail.pumble.com/"
+      ],
+      "extraction": {
+        "category": "Messaging",
+        "description": "An all-in-one team communication app for messaging, file sharing, video conferencing, and collaboration.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Friction",
+        "blocker": "Unclear auth and API surface details",
+        "evidence_url": "https://pumble.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Messaging",
+      "description": "An all-in-one team communication app for messaging, file sharing, video conferencing, and collaboration.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Friction",
+      "blocker": "Unclear auth and API surface details",
+      "evidence_url": "https://pumble.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 26,
+    "category": "Communications and Messaging",
+    "name": "Discord",
+    "hint": "discord.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 2106,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Messaging",
+        "description": "Discord is a group chat platform for talking, playing games, and hanging out with friends or communities.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "No API or developer details in text",
+        "evidence_url": "https://discord.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Discord API documentation authentication",
+      "candidate_urls": [
+        "https://discord.com/",
+        "https://discord.com/download"
+      ],
+      "extraction": {
+        "category": "Messaging",
+        "description": "Discord is a group chat platform for talking, playing games, and hanging out with friends and communities over voice, video, or text.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "No API or developer documentation found in text",
+        "evidence_url": "https://discord.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Messaging",
+      "description": "Discord is a group chat platform for talking, playing games, and hanging out with friends and communities over voice, video, or text.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "No API or developer documentation found in text",
+      "evidence_url": "https://discord.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 27,
+    "category": "Communications and Messaging",
+    "name": "Telegram",
+    "hint": "core.telegram.org",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 19024,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Messaging",
+        "description": "Telegram offers a Bot API, Telegram API and TDLib, and Gateway API to build messaging apps, bots, and send verification codes.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Open source",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://core.telegram.org/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Telegram API documentation authentication",
+      "candidate_urls": [
+        "https://telegram.org/",
+        "https://desktop.telegram.org/"
+      ],
+      "extraction": {
+        "category": "Messaging",
+        "description": "Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Open source",
+        "api_surface": "REST",
+        "has_mcp": "No",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://core.telegram.org/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Messaging",
+      "description": "Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Open source",
+      "api_surface": "REST",
+      "has_mcp": "No",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://core.telegram.org/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 28,
+    "category": "Communications and Messaging",
+    "name": "WhatsApp Business",
+    "hint": "developers.facebook.com/docs/whatsapp",
+    "pass1": {
+      "fetch_status": 400,
+      "char_count": 0,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Messaging",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text available",
+        "evidence_url": "https://developers.facebook.com/docs/whatsapp",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "WhatsApp Business API documentation authentication",
+      "candidate_urls": [
+        "https://web.whatsapp.com/",
+        "https://www.whatsapp.com/download"
+      ],
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text available",
+        "evidence_url": "https://developers.facebook.com/docs/whatsapp",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Unclear from fetched text",
+      "description": "Unclear from fetched text",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "Fetch failed, no text available",
+      "evidence_url": "https://developers.facebook.com/docs/whatsapp",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 29,
+    "category": "Communications and Messaging",
+    "name": "Aircall",
+    "hint": "aircall.io",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 5153,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Support",
+        "description": "An AI-powered customer communications platform providing voice agents, automated workflows, and CRM integrations.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "No public API details found in text",
+        "evidence_url": "https://aircall.io/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Aircall API documentation authentication",
+      "candidate_urls": [
+        "https://aircall.io/download/",
+        "https://aircall.io/"
+      ],
+      "extraction": {
+        "category": "Support",
+        "description": "An AI-powered customer communications platform and phone system for SMBs and enterprise.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "No API details mentioned in text",
+        "evidence_url": "https://aircall.io/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Support",
+      "description": "An AI-powered customer communications platform and phone system for SMBs and enterprise.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Friction",
+      "blocker": "No API details mentioned in text",
+      "evidence_url": "https://aircall.io/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 30,
+    "category": "Communications and Messaging",
+    "name": "Vonage",
+    "hint": "developer.vonage.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 9174,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Messaging",
+        "description": "Vonage API Developer provides communication and network APIs for voice, video, messaging, and AI interactions.",
+        "auth_method": "JWT authentication available",
+        "gating": "Self-serve free",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developer.vonage.com/en/home",
+        "confidence": "High"
+      }
+    },
+    "pass2": null,
+    "final": {
+      "category": "Messaging",
+      "description": "Vonage API Developer provides communication and network APIs for voice, video, messaging, and AI interactions.",
+      "auth_method": "JWT authentication available",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://developer.vonage.com/en/home",
+      "confidence": "High"
+    },
+    "used_pass2": false
+  },
+  {
+    "id": 31,
+    "category": "Marketing, Ads, Email and Social",
+    "name": "Google Ads",
+    "hint": "developers.google.com/google-ads",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 1328,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Promote your website, products, and app to the right users and automate campaign management with the Google Ads platform and API.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "No",
+        "buildability_verdict": "Friction",
+        "blocker": "API details unclear from text",
+        "evidence_url": "https://developers.google.com/google-ads",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Google Ads API documentation authentication",
+      "candidate_urls": [
+        "https://www.google.co.in/",
+        "https://www.google.com/?#!%20/="
+      ],
+      "extraction": {
+        "category": "Advertising",
+        "description": "Create and manage ads that reach users looking for your products or services on Google Search, Display, YouTube and more.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Unclear API surface and auth methods in text",
+        "evidence_url": "https://developers.google.com/google-ads",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Advertising",
+      "description": "Create and manage ads that reach users looking for your products or services on Google Search, Display, YouTube and more.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Friction",
+      "blocker": "Unclear API surface and auth methods in text",
+      "evidence_url": "https://developers.google.com/google-ads",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 32,
+    "category": "Marketing, Ads, Email and Social",
+    "name": "Meta Ads",
+    "hint": "developers.facebook.com/docs/marketing-apis",
+    "pass1": {
+      "fetch_status": 400,
+      "char_count": 0,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text available",
+        "evidence_url": "https://developers.facebook.com/docs/marketing-api",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Meta Ads API documentation authentication",
+      "candidate_urls": [
+        "https://www.meta.com/about/",
+        "https://business.facebook.com/"
+      ],
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text available",
+        "evidence_url": "https://developers.facebook.com/docs/marketing-api",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Unclear from fetched text",
+      "description": "Unclear from fetched text",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "Fetch failed, no text available",
+      "evidence_url": "https://developers.facebook.com/docs/marketing-api",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 33,
+    "category": "Marketing, Ads, Email and Social",
+    "name": "LinkedIn Ads",
+    "hint": "learn.microsoft.com/linkedin/marketing",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 3930,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Marketing and Advertising",
+        "description": "LinkedIn Marketing Platform offers APIs to create marketing campaigns, report performance, manage leads, and grow company pages.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Authentication details not found in text",
+        "evidence_url": "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-09",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "LinkedIn Ads API documentation authentication",
+      "candidate_urls": [
+        "https://www.linkedin.com/login/",
+        "https://www.linkedin.com/"
+      ],
+      "extraction": {
+        "category": "Marketing",
+        "description": "LinkedIn Marketing Platform offers APIs to create campaigns, report performance, manage leads, and grow company Pages.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "No",
+        "buildability_verdict": "Friction",
+        "blocker": "Authentication and access details unclear",
+        "evidence_url": "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-09",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Marketing",
+      "description": "LinkedIn Marketing Platform offers APIs to create campaigns, report performance, manage leads, and grow company Pages.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "has_mcp": "No",
+      "buildability_verdict": "Friction",
+      "blocker": "Authentication and access details unclear",
+      "evidence_url": "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-09",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 34,
+    "category": "Marketing, Ads, Email and Social",
+    "name": "GoHighLevel",
+    "hint": "highlevel.stoplight.io",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 9,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Insufficient text content",
+        "evidence_url": "https://highlevel.stoplight.io/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "GoHighLevel API documentation authentication",
+      "candidate_urls": [
+        "https://www.gohighlevel.com/?msockid=1230e651c8d7690d2a4cf187c9ec6861",
+        "https://www.gohighlevel.com/home-page-ver3?msockid=1230e651c8d7690d2a4cf187c9ec6861"
+      ],
+      "extraction": {
+        "category": "CRM",
+        "description": "An AI-powered all-in-one business operating system and marketing/sales platform for agencies and businesses.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Basic API Access requires the Unlimited plan ($297/month)",
+        "evidence_url": "https://highlevel.stoplight.io/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "CRM",
+      "description": "An AI-powered all-in-one business operating system and marketing/sales platform for agencies and businesses.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "REST",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Friction",
+      "blocker": "Basic API Access requires the Unlimited plan ($297/month)",
+      "evidence_url": "https://highlevel.stoplight.io/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 35,
+    "category": "Marketing, Ads, Email and Social",
+    "name": "Mailchimp",
+    "hint": "mailchimp.com/developer",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 1999,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Provides developer tools for marketing campaigns, transactional email and SMS, and commerce stacks.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST + GraphQL",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://mailchimp.com/developer/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Mailchimp API documentation authentication",
+      "candidate_urls": [
+        "https://mailchimp.com/?msockid=207670e4c75667dc24166732c67a6615",
+        "https://mailchimp.app.link/aTLHBibqQR"
+      ],
+      "extraction": {
+        "category": "Marketing/CRM",
+        "description": "Mailchimp provides developer tools, marketing APIs, transactional email and SMS, and modular commerce stacks for automated campaigns.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "REST + GraphQL",
+        "has_mcp": "No",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://mailchimp.com/developer/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Marketing/CRM",
+      "description": "Mailchimp provides developer tools, marketing APIs, transactional email and SMS, and modular commerce stacks for automated campaigns.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "REST + GraphQL",
+      "has_mcp": "No",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://mailchimp.com/developer/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 36,
+    "category": "Marketing, Ads, Email and Social",
+    "name": "Klaviyo",
+    "hint": "developers.klaviyo.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 3708,
+      "fetch_error": null,
+      "extraction": {
+        "category": "CRM",
+        "description": "API and developer documentation for building apps and integrations using Klaviyo.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developers.klaviyo.com/en",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Klaviyo API documentation authentication",
+      "candidate_urls": [
+        "https://www.klaviyo.com/",
+        "https://www.klaviyo.com/login"
+      ],
+      "extraction": {
+        "category": "CRM",
+        "description": "Autonomous B2C CRM and AI marketing platform that unifies customer data and automates marketing campaigns.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://www.klaviyo.com/uk/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "CRM",
+      "description": "Autonomous B2C CRM and AI marketing platform that unifies customer data and automates marketing campaigns.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://www.klaviyo.com/uk/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 37,
+    "category": "Marketing, Ads, Email and Social",
+    "name": "systeme.io",
+    "hint": "systeme.io (funnel builder)",
+    "pass1": {
+      "fetch_status": null,
+      "char_count": 0,
+      "fetch_error": "Failed to parse: Host 'systeme.io (funnel builder)' contains invalid character ' '",
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text available",
+        "evidence_url": "https://systeme.io",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "systeme.io API documentation authentication",
+      "candidate_urls": [
+        "https://systeme.io/",
+        "https://systeme.io/en/login"
+      ],
+      "extraction": {
+        "category": "Marketing and Sales",
+        "description": "An all-in-one platform for sales funnels, email marketing, online courses, and business management.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "No authentication or API details found",
+        "evidence_url": "https://systeme.io",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Marketing and Sales",
+      "description": "An all-in-one platform for sales funnels, email marketing, online courses, and business management.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "No authentication or API details found",
+      "evidence_url": "https://systeme.io",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 38,
+    "category": "Marketing, Ads, Email and Social",
+    "name": "Pinterest",
+    "hint": "developers.pinterest.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 1140,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "One API to seamlessly integrate with Pinterest to plan content, manage ads, upload product feeds, and more.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Authentication and access details unclear from fetched text",
+        "evidence_url": "https://developers.pinterest.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Pinterest API documentation authentication",
+      "candidate_urls": [
+        "https://www.zhihu.com/",
+        "https://www.zhihu.com/question/447253187"
+      ],
+      "extraction": {
+        "category": "Social Media",
+        "description": "One API to seamlessly integrate with Pinterest to plan content, manage ads, upload product feeds, and more.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Auth and gating details not in text",
+        "evidence_url": "https://developers.pinterest.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Social Media",
+      "description": "One API to seamlessly integrate with Pinterest to plan content, manage ads, upload product feeds, and more.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Friction",
+      "blocker": "Auth and gating details not in text",
+      "evidence_url": "https://developers.pinterest.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 39,
+    "category": "Marketing, Ads, Email and Social",
+    "name": "Threads (Meta)",
+    "hint": "developers.facebook.com/docs/threads",
+    "pass1": {
+      "fetch_status": 400,
+      "char_count": 0,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text available",
+        "evidence_url": "https://developers.facebook.com/docs/threads",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Threads (Meta) API documentation authentication",
+      "candidate_urls": [
+        "https://www.threads.com/",
+        "https://www.threads.com/login"
+      ],
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text available",
+        "evidence_url": "https://developers.facebook.com/docs/threads",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Unclear from fetched text",
+      "description": "Unclear from fetched text",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "Fetch failed, no text available",
+      "evidence_url": "https://developers.facebook.com/docs/threads",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 40,
+    "category": "Marketing, Ads, Email and Social",
+    "name": "SendGrid",
+    "hint": "sendgrid.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 2666,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Messaging",
+        "description": "SendGrid Email API and Email Marketing Campaigns platform for delivering emails at scale.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Missing API authentication and surface details",
+        "evidence_url": "https://www.twilio.com/en-us/sendgrid",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "SendGrid API documentation authentication",
+      "candidate_urls": [
+        "https://www.youtube.com/watch?v=nt4xNdCja9A",
+        "https://www.facebook.com/nangngocvn/videos/%C4%91%C6%B0%E1%BB%9Dng-x%C3%A1-%E1%BB%9F-m%E1%BB%B9-khi%E1%BA%BFn-ch%C3%BAng-ta-l%C3%A1i-xe-c%E1%BA%A3m-gi%C3%A1c-th%E1%BA%ADt-an-to%C3%A0n-xuhuong-xuhuongfb-cuoc/1175071567419076/"
+      ],
+      "extraction": {
+        "category": "Messaging",
+        "description": "SendGrid provides email API and marketing campaign services for sending email at scale.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "REST",
+        "has_mcp": "No",
+        "buildability_verdict": "Friction",
+        "blocker": "Authentication and API endpoint details missing in text",
+        "evidence_url": "https://www.twilio.com/en-us/sendgrid",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Messaging",
+      "description": "SendGrid provides email API and marketing campaign services for sending email at scale.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "has_mcp": "No",
+      "buildability_verdict": "Friction",
+      "blocker": "Authentication and API endpoint details missing in text",
+      "evidence_url": "https://www.twilio.com/en-us/sendgrid",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 41,
+    "category": "Ecommerce",
+    "name": "Shopify",
+    "hint": "shopify.dev",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 4081,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Shopify docs and dev tools for building apps, themes, storefronts, and agents.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "API and auth details unclear",
+        "evidence_url": "https://shopify.dev/docs",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Shopify API documentation authentication",
+      "candidate_urls": [
+        "https://www.shopify.com/",
+        "https://www.shopify.com/in"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "An all-in-one commerce platform for businesses to build online stores, apps, and agentic shopping experiences.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://shopify.dev/docs",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "An all-in-one commerce platform for businesses to build online stores, apps, and agentic shopping experiences.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://shopify.dev/docs",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 42,
+    "category": "Ecommerce",
+    "name": "WooCommerce",
+    "hint": "woocommerce.com/document/woocommerce-rest-api",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 4451,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Connects your store to external systems and services using API keys and REST API documentation.",
+        "auth_method": "API key",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://woocommerce.com/document/woocommerce-rest-api/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "WooCommerce API documentation authentication",
+      "candidate_urls": [
+        "https://woocommerce.com/",
+        "https://woocommerce.com/?locale=en"
+      ],
+      "extraction": {
+        "category": "Fintech",
+        "description": "The WooCommerce REST API connects your store to external systems and services using keys.",
+        "auth_method": "API key",
+        "gating": "Open source",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://woocommerce.com/document/woocommerce-rest-api/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Fintech",
+      "description": "The WooCommerce REST API connects your store to external systems and services using keys.",
+      "auth_method": "API key",
+      "gating": "Open source",
+      "api_surface": "REST",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 43,
+    "category": "Ecommerce",
+    "name": "BigCommerce",
+    "hint": "developer.bigcommerce.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 7761,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "A commerce platform providing REST and GraphQL APIs to manage products, orders, customers, and store settings.",
+        "auth_method": "token",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "REST + GraphQL",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+        "confidence": "High"
+      }
+    },
+    "pass2": null,
+    "final": {
+      "category": "Dev/Infra",
+      "description": "A commerce platform providing REST and GraphQL APIs to manage products, orders, customers, and store settings.",
+      "auth_method": "token",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "REST + GraphQL",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "confidence": "High"
+    },
+    "used_pass2": false
+  },
+  {
+    "id": 44,
+    "category": "Ecommerce",
+    "name": "Salesforce Commerce Cloud",
+    "hint": "developer.salesforce.com/docs/commerce",
+    "pass1": {
+      "fetch_status": 403,
+      "char_count": 0,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text available",
+        "evidence_url": "https://developer.salesforce.com/docs/commerce",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Salesforce Commerce Cloud API documentation authentication",
+      "candidate_urls": [
+        "https://login.salesforce.com/",
+        "https://www.salesforce.com/in/"
+      ],
+      "extraction": {
+        "category": "CRM",
+        "description": "Salesforce login page for accessing Salesforce services including Commerce Cloud.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "No API documentation in text",
+        "evidence_url": "https://developer.salesforce.com/docs/commerce",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "CRM",
+      "description": "Salesforce login page for accessing Salesforce services including Commerce Cloud.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "No API documentation in text",
+      "evidence_url": "https://developer.salesforce.com/docs/commerce",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 45,
+    "category": "Ecommerce",
+    "name": "Magento (Adobe Commerce)",
+    "hint": "developer.adobe.com/commerce",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 1632,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Adobe Commerce provides developers with software, tools, and services to customize and extend multichannel, global commerce and integrate with backend systems.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Lack of explicit API and auth details in text",
+        "evidence_url": "https://developer.adobe.com/commerce/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Magento (Adobe Commerce) API documentation authentication",
+      "candidate_urls": [
+        "https://www.magento-opensource.com/",
+        "https://magento.com/"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Adobe Commerce and Magento provide software, tools, and services to customize and extend multichannel global commerce for B2B and B2C.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Open source",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "API surface and auth details unclear",
+        "evidence_url": "https://developer.adobe.com/commerce/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "Adobe Commerce and Magento provide software, tools, and services to customize and extend multichannel global commerce for B2B and B2C.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Open source",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Friction",
+      "blocker": "API surface and auth details unclear",
+      "evidence_url": "https://developer.adobe.com/commerce/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 46,
+    "category": "Ecommerce",
+    "name": "Squarespace",
+    "hint": "developers.squarespace.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 1974,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Squarespace Developer Platform providing APIs, apps, and documentation to build external apps, manage commerce, and customize sites.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developers.squarespace.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Squarespace API documentation authentication",
+      "candidate_urls": [
+        "https://www.squarespace.com/",
+        "https://account.squarespace.com/"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Developer platform providing APIs, webhooks, and tools to build and publish external apps, manage commerce, and handle website reselling on Squarespace.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developers.squarespace.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "Developer platform providing APIs, webhooks, and tools to build and publish external apps, manage commerce, and handle website reselling on Squarespace.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://developers.squarespace.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 47,
+    "category": "Ecommerce",
+    "name": "Ecwid",
+    "hint": "api-docs.ecwid.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 2775,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Ecwid provides APIs, webhooks, and documentation to build apps and integrate Ecwid Ecommerce.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Auth method and gating unclear from text",
+        "evidence_url": "https://docs.ecwid.com",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Ecwid API documentation authentication",
+      "candidate_urls": [
+        "https://www.zhihu.com/question/21027491",
+        "https://www.zhihu.com/topic/19851981/intro"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Ecwid provides APIs, webhooks, and tools to build apps, customize storefronts, and integrate ecommerce features.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Authentication details unclear from text",
+        "evidence_url": "https://docs.ecwid.com",
+        "confidence": "Medium"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "Ecwid provides APIs, webhooks, and tools to build apps, customize storefronts, and integrate ecommerce features.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Friction",
+      "blocker": "Authentication details unclear from text",
+      "evidence_url": "https://docs.ecwid.com",
+      "confidence": "Medium"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 48,
+    "category": "Ecommerce",
+    "name": "Gumroad",
+    "hint": "gumroad.com/api",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 3,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Fintech",
+        "description": "Gumroad API",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Insufficient API details in text",
+        "evidence_url": "https://gumroad.com/api",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Gumroad API documentation authentication",
+      "candidate_urls": [
+        "https://gumroad.com/",
+        "https://gumroad.com/login"
+      ],
+      "extraction": {
+        "category": "Fintech",
+        "description": "An all-in-one platform to sell digital products, subscriptions, and start online businesses.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "No API documentation or details provided in text",
+        "evidence_url": "https://gumroad.com/api",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Fintech",
+      "description": "An all-in-one platform to sell digital products, subscriptions, and start online businesses.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "No API documentation or details provided in text",
+      "evidence_url": "https://gumroad.com/api",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 49,
+    "category": "Ecommerce",
+    "name": "Amazon Selling Partner",
+    "hint": "developer-docs.amazon.com/sp-api",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 5634,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Amazon's REST-based SP-API providing integration for selling partners with models and endpoints in OpenAPI.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "No",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developer-docs.amazon/sp-api",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Amazon Selling Partner API documentation authentication",
+      "candidate_urls": [
+        "https://www.amazon.in/",
+        "https://www.amazon.in/stores/Home/page/F406DA97-A41F-4396-B494-23C4F95051C4"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Amazon's REST-based Selling Partner API (SP-API) for building applications.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developer-docs.amazon/sp-api",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "Amazon's REST-based Selling Partner API (SP-API) for building applications.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://developer-docs.amazon/sp-api",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 50,
+    "category": "Ecommerce",
+    "name": "fanbasis",
+    "hint": "fanbasis.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 6250,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Fintech",
+        "description": "An internet platform for creating checkouts, funnels, courses, communities, webinars, and managing payments.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Friction",
+        "blocker": "APIs and SDKs mentioned but auth and API surface details are unclear",
+        "evidence_url": "https://commas.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "fanbasis API documentation authentication",
+      "candidate_urls": [
+        "https://en.m.wikipedia.org/wiki/Gentleman_(2016_film)",
+        "https://www.airtelxstream.in/movies/gentleman-2016/SUNNXT_MOVIE_7760"
+      ],
+      "extraction": {
+        "category": "Fintech",
+        "description": "An all-in-one platform to create, sell, and get paid with built-in payments, funnels, webinars, courses, and communities.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://commas.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Fintech",
+      "description": "An all-in-one platform to create, sell, and get paid with built-in payments, funnels, webinars, courses, and communities.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://commas.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 51,
+    "category": "Data, SEO and Scraping",
+    "name": "DataForSEO",
+    "hint": "docs.dataforseo.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 4317,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "API for building SEO software, data analysis pipelines, and robust no-code automations.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "REST",
+        "has_mcp": "No",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://docs.dataforseo.com/v3/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "DataForSEO API documentation authentication",
+      "candidate_urls": [
+        "https://docs.the-qrcode-generator.com/en/articles/13009388-what-happens-to-qr-codes-when-my-subscription-or-trial-expires-and-can-i-reactivate-them",
+        "https://docs.the-qrcode-generator.com/en/articles/8885092-introduction-to-qr-codes"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "DataForSEO API provides search engine optimization software, data analysis pipelines, and robust no-code automations via REST technology.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://docs.dataforseo.com/v3/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "DataForSEO API provides search engine optimization software, data analysis pipelines, and robust no-code automations via REST technology.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://docs.dataforseo.com/v3/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 52,
+    "category": "Data, SEO and Scraping",
+    "name": "SE Ranking",
+    "hint": "seranking.com/api",
+    "pass1": {
+      "fetch_status": 404,
+      "char_count": 0,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text available",
+        "evidence_url": "https://seranking.com/api",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "SE Ranking API documentation authentication",
+      "candidate_urls": [
+        "https://wordwall.net/resource/66997141/peking-duck",
+        "https://quizzly.ai/play/peking-duck"
+      ],
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Incorrect page content about Peking duck",
+        "evidence_url": "https://seranking.com/api",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Unclear from fetched text",
+      "description": "Unclear from fetched text",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "Incorrect page content about Peking duck",
+      "evidence_url": "https://seranking.com/api",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 53,
+    "category": "Data, SEO and Scraping",
+    "name": "Ahrefs",
+    "hint": "ahrefs.com/api",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 3337,
+      "fetch_error": null,
+      "extraction": {
+        "category": "AI/Research",
+        "description": "Access Ahrefs marketing and search data through APIs and developer tools to build custom integrations and workflows.",
+        "auth_method": "API key",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://docs.ahrefs.com",
+        "confidence": "High"
+      }
+    },
+    "pass2": null,
+    "final": {
+      "category": "AI/Research",
+      "description": "Access Ahrefs marketing and search data through APIs and developer tools to build custom integrations and workflows.",
+      "auth_method": "API key",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "REST",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://docs.ahrefs.com",
+      "confidence": "High"
+    },
+    "used_pass2": false
+  },
+  {
+    "id": 54,
+    "category": "Data, SEO and Scraping",
+    "name": "MrScraper",
+    "hint": "docs.mrscraper.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 5736,
+      "fetch_error": null,
+      "extraction": {
+        "category": "AI/Research",
+        "description": "An all-in-one web scraping platform featuring AI-powered and manual scrapers, proxies, APIs, and developer tools.",
+        "auth_method": "token",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "MrScraper API documentation authentication",
+      "candidate_urls": [
+        "https://www.merriam-webster.com/thesaurus/hate!",
+        "https://www.merriam-webster.com/thesaurus/hates"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "An all-in-one scraping platform with AI-powered and manual scrapers, APIs, SDKs, and developer tools.",
+        "auth_method": "token",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "An all-in-one scraping platform with AI-powered and manual scrapers, APIs, SDKs, and developer tools.",
+      "auth_method": "token",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "REST",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 55,
+    "category": "Data, SEO and Scraping",
+    "name": "Apify",
+    "hint": "docs.apify.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 3362,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Develop, run, and share web scraping and automation tools in the cloud using Actors.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://docs.apify.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Apify API documentation authentication",
+      "candidate_urls": [
+        "https://apify.com/",
+        "https://apify.com/store"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Apify provides web scraping, browser automation tools, and cloud-hosted Actors as tools for AI agents and developers.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://apify.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "Apify provides web scraping, browser automation tools, and cloud-hosted Actors as tools for AI agents and developers.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://apify.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 56,
+    "category": "Data, SEO and Scraping",
+    "name": "Firecrawl",
+    "hint": "firecrawl.dev",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 20436,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "An API and developer index to search, scrape, and interact with the web at scale for AI agents.",
+        "auth_method": "API key",
+        "gating": "Self-serve free",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://www.firecrawl.dev/",
+        "confidence": "High"
+      }
+    },
+    "pass2": null,
+    "final": {
+      "category": "Dev/Infra",
+      "description": "An API and developer index to search, scrape, and interact with the web at scale for AI agents.",
+      "auth_method": "API key",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://www.firecrawl.dev/",
+      "confidence": "High"
+    },
+    "used_pass2": false
+  },
+  {
+    "id": 57,
+    "category": "Data, SEO and Scraping",
+    "name": "Bright Data",
+    "hint": "brightdata.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 6438,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Web data infrastructure providing scrapers, proxy networks, and APIs for humans and AI agents.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://brightdata.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Bright Data API documentation authentication",
+      "candidate_urls": [
+        "https://www.clearlenshub.com/product/clalen-o2o2-color-1-day-ash-gray-ex-30-pack/",
+        "https://juicylens.com/products/clalen-o2o2-color-1day-ash-gray-ex-30pcs-silicone-hydrogel-1day-g-dia-12-9mm"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Web data infrastructure providing scraping APIs, proxy networks, and datasets for humans and AI agents.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://brightdata.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "Web data infrastructure providing scraping APIs, proxy networks, and datasets for humans and AI agents.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://brightdata.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 58,
+    "category": "Data, SEO and Scraping",
+    "name": "Sherlock",
+    "hint": "github.com/sherlock-project/sherlock",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 5053,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Hunt down social media accounts by username across social networks",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Open source",
+        "api_surface": "CLI only",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://github.com/sherlock-project/sherlock",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Sherlock API documentation authentication",
+      "candidate_urls": [
+        "https://chrome.xahuapu.net/help/56.html",
+        "https://chrome.xahuapu.net/help/263.html"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Hunt down social media accounts by username across 400+ social networks",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Open source",
+        "api_surface": "CLI only",
+        "has_mcp": "No",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://github.com/sherlock-project/sherlock",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "Hunt down social media accounts by username across 400+ social networks",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Open source",
+      "api_surface": "CLI only",
+      "has_mcp": "No",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://github.com/sherlock-project/sherlock",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 59,
+    "category": "Data, SEO and Scraping",
+    "name": "Waterfall.io",
+    "hint": "waterfall.io (contact/company intel)",
+    "pass1": {
+      "fetch_status": null,
+      "char_count": 0,
+      "fetch_error": "Failed to parse: Host 'waterfall.io (contact' contains invalid character ' '",
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Failed to fetch text",
+        "evidence_url": "https://waterfall.io",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Waterfall.io API documentation authentication",
+      "candidate_urls": [
+        "https://www.tripadvisor.in/Attractions-g12400058-Activities-c57-t95-Thane_District_Maharashtra.html",
+        "https://en.wikipedia.org/wiki/Waterfall"
+      ],
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "No software information available",
+        "evidence_url": "https://waterfall.io",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Unclear from fetched text",
+      "description": "Unclear from fetched text",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "No software information available",
+      "evidence_url": "https://waterfall.io",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 60,
+    "category": "Data, SEO and Scraping",
+    "name": "Clay",
+    "hint": "clay.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 12540,
+      "fetch_error": null,
+      "extraction": {
+        "category": "AI/Research",
+        "description": "Infrastructure to get any data, run agentic workflows, and launch GTM plays.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://www.clay.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Clay API documentation authentication",
+      "candidate_urls": [
+        "https://www.clay.com/",
+        "https://app.clay.com/"
+      ],
+      "extraction": {
+        "category": "AI/Research",
+        "description": "Build systems to grow revenue by centralizing data, running agentic workflows, and launching GTM plays.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "CLI only",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://www.clay.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "AI/Research",
+      "description": "Build systems to grow revenue by centralizing data, running agentic workflows, and launching GTM plays.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "CLI only",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://www.clay.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 61,
+    "category": "Developer, Infra and Data platforms",
+    "name": "GitHub",
+    "hint": "docs.github.com/rest",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 1793,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Create integrations, retrieve data, and automate your workflows with the GitHub REST API.",
+        "auth_method": "token",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://docs.github.com/en/rest",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "GitHub API documentation authentication",
+      "candidate_urls": [
+        "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13307798508",
+        "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13259322198"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Create integrations, retrieve data, and automate your workflows with the GitHub REST API.",
+        "auth_method": "token",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://docs.github.com/en/rest",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "Create integrations, retrieve data, and automate your workflows with the GitHub REST API.",
+      "auth_method": "token",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://docs.github.com/en/rest",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 62,
+    "category": "Developer, Infra and Data platforms",
+    "name": "Vercel",
+    "hint": "vercel.com/docs/rest-api",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 115524,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "A cloud platform for deploying and scaling web applications with a comprehensive REST API.",
+        "auth_method": "Vercel Access Tokens (Bearer token)",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://vercel.com/docs/rest-api",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Vercel API documentation authentication",
+      "candidate_urls": [
+        "https://vercel.com/",
+        "https://vercel.com/login"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "A cloud platform for deploying and scaling web applications and building agentic infrastructure.",
+        "auth_method": "token",
+        "gating": "Self-serve free",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://vercel.com/docs/rest-api",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "A cloud platform for deploying and scaling web applications and building agentic infrastructure.",
+      "auth_method": "token",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://vercel.com/docs/rest-api",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 63,
+    "category": "Developer, Infra and Data platforms",
+    "name": "Netlify",
+    "hint": "docs.netlify.com/api",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 30575,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Use the Netlify REST API to manage atomic deploys of your sites and apps, manage form submissions, inject JavaScript snippets, and manage DNS.",
+        "auth_method": "OAuth2",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "No",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Netlify API documentation authentication",
+      "candidate_urls": [
+        "https://docs.netlify.com/",
+        "https://www.netlify.com/"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "An all-in-one platform to build, deploy, manage, and extend modern web apps and AI agents.",
+        "auth_method": "OAuth2",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "An all-in-one platform to build, deploy, manage, and extend modern web apps and AI agents.",
+      "auth_method": "OAuth2",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 64,
+    "category": "Developer, Infra and Data platforms",
+    "name": "Cloudflare",
+    "hint": "developers.cloudflare.com/api",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 276758,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Cloudflare API reference for managing accounts, organizations, users, tokens, and infrastructure settings.",
+        "auth_method": "token",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developers.cloudflare.com/api/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Cloudflare API documentation authentication",
+      "candidate_urls": [
+        "https://www.cloudflare.com/",
+        "https://dash.cloudflare.com/login"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "One platform for your apps, agents, and workforce to build, secure, and scale without managing infrastructure.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developers.cloudflare.com/api/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "One platform for your apps, agents, and workforce to build, secure, and scale without managing infrastructure.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://developers.cloudflare.com/api/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 65,
+    "category": "Developer, Infra and Data platforms",
+    "name": "Supabase",
+    "hint": "supabase.com/docs",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 3139,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Supabase provides a backend platform including a Postgres database, authentication, storage, realtime, and edge functions.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST + GraphQL",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://supabase.com/docs",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Supabase API documentation authentication",
+      "candidate_urls": [
+        "https://supabase.com/docs",
+        "https://supabase.com/"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Supabase provides a complete backend platform including a Postgres database, authentication, storage, edge functions, and realtime data.",
+        "auth_method": "API key",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST + GraphQL",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://supabase.com/docs",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "Supabase provides a complete backend platform including a Postgres database, authentication, storage, edge functions, and realtime data.",
+      "auth_method": "API key",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST + GraphQL",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://supabase.com/docs",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 66,
+    "category": "Developer, Infra and Data platforms",
+    "name": "Neo4j",
+    "hint": "neo4j.com/docs/api",
+    "pass1": {
+      "fetch_status": 404,
+      "char_count": 0,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text available",
+        "evidence_url": "https://neo4j.com/docs/api/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Neo4j API documentation authentication",
+      "candidate_urls": [
+        "https://neo4j.com/",
+        "https://neo4j.com/download/"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Graph intelligence platform and graph database for storing and querying connected data and building AI agents.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Friction",
+        "blocker": "Unclear API documentation or auth details",
+        "evidence_url": "https://neo4j.com/",
+        "confidence": "Medium"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "Graph intelligence platform and graph database for storing and querying connected data and building AI agents.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Friction",
+      "blocker": "Unclear API documentation or auth details",
+      "evidence_url": "https://neo4j.com/",
+      "confidence": "Medium"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 67,
+    "category": "Developer, Infra and Data platforms",
+    "name": "Snowflake",
+    "hint": "docs.snowflake.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 3586,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Streamlines the Snowflake journey with comprehensive documentation, user guides, developer guides, and reference resources.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Unclear API surface and auth",
+        "evidence_url": "https://docs.snowflake.com/en/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Snowflake API documentation authentication",
+      "candidate_urls": [
+        "https://docs.snowflake.com/en/",
+        "https://www.snowflake.com/en/"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "A fully managed platform for data engineering, analytics, AI, applications, and collaboration across clouds.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Unclear authentication and API surface details in text",
+        "evidence_url": "https://docs.snowflake.com/en/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "A fully managed platform for data engineering, analytics, AI, applications, and collaboration across clouds.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Friction",
+      "blocker": "Unclear authentication and API surface details in text",
+      "evidence_url": "https://docs.snowflake.com/en/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 68,
+    "category": "Developer, Infra and Data platforms",
+    "name": "MongoDB Atlas",
+    "hint": "mongodb.com/docs/atlas/api",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 6160,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Programmatically interact with MongoDB Atlas to perform administrative tasks, manage deployments, and access embedding and reranking models.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Authentication details unclear",
+        "evidence_url": "https://www.mongodb.com/docs/atlas/api/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "MongoDB Atlas API documentation authentication",
+      "candidate_urls": [
+        "https://www.mongodb.com/?msockid=2f1d01dcd11f6b9a08b3160ad06e6ac9",
+        "https://www.mongodb.com/try/download/community?msockid=2f1d01dcd11f6b9a08b3160ad06e6ac9"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "MongoDB Atlas is a multi-cloud developer data platform that provides a unified database, search, vector search, and administrative tools.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://www.mongodb.com/docs/atlas/api/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "MongoDB Atlas is a multi-cloud developer data platform that provides a unified database, search, vector search, and administrative tools.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://www.mongodb.com/docs/atlas/api/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 69,
+    "category": "Developer, Infra and Data platforms",
+    "name": "Datadog",
+    "hint": "docs.datadoghq.com/api",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 88108,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Monitoring and security platform for cloud applications providing observability, APM, log management, and infrastructure monitoring.",
+        "auth_method": "OAuth2",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://docs.datadoghq.com/api/latest/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Datadog API documentation authentication",
+      "candidate_urls": [
+        "https://docs.datadoghq.com/getting_started/",
+        "https://docs.datadoghq.com/"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Monitoring and security platform for cloud applications providing observability and management tools.",
+        "auth_method": "OAuth2",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://docs.datadoghq.com/api/latest/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "Monitoring and security platform for cloud applications providing observability and management tools.",
+      "auth_method": "OAuth2",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://docs.datadoghq.com/api/latest/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 70,
+    "category": "Developer, Infra and Data platforms",
+    "name": "Sentry",
+    "hint": "docs.sentry.io/api",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 1977,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "The Sentry web API is used to access the Sentry platform programmatically to manage account-level resources and manage and export data.",
+        "auth_method": "token",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://docs.sentry.io/api/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Sentry API documentation authentication",
+      "candidate_urls": [
+        "https://docs.sentry.io/",
+        "https://sentry.io/"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Application performance monitoring and error tracking software used to catch errors, trace performance, and fix broken code.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://docs.sentry.io/api/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "Application performance monitoring and error tracking software used to catch errors, trace performance, and fix broken code.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://docs.sentry.io/api/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 71,
+    "category": "Productivity and Project Management",
+    "name": "Notion",
+    "hint": "developers.notion.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 6897,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Notion connections let you connect your workspace to external tools and automate workflows through code via the REST API.",
+        "auth_method": "OAuth 2.0, static API token, static bearer token",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developers.notion.com/guides/get-started/overview",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Notion API documentation authentication",
+      "candidate_urls": [
+        "https://www.notion.com/",
+        "https://www.notion.com/desktop"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Notion is an AI-native workspace and system of record to capture knowledge, find answers, and automate tasks.",
+        "auth_method": "OAuth 2.0, static API token, and static bearer token",
+        "gating": "Self-serve free",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developers.notion.com/guides/get-started/overview",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "Notion is an AI-native workspace and system of record to capture knowledge, find answers, and automate tasks.",
+      "auth_method": "OAuth 2.0, static API token, and static bearer token",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://developers.notion.com/guides/get-started/overview",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 72,
+    "category": "Productivity and Project Management",
+    "name": "Airtable",
+    "hint": "airtable.com/developers",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 3631,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Airtable provides structured field types, relational links, and an MCP server to allow AI agents to read, write, and query bases.",
+        "auth_method": "OAuth",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://airtable.com/developers/agents",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Airtable API documentation authentication",
+      "candidate_urls": [
+        "https://zapier.com/blog/what-is-airtable/?msockid=0897ccadcdfb6cec2db3db7bcc2f6da8",
+        "https://www.airtable.com/"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "A cloud-based platform for creating and sharing relational databases with structured field types and built-in automations.",
+        "auth_method": "OAuth",
+        "gating": "Unclear from fetched text",
+        "api_surface": "CLI only",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://airtable.com/developers/agents",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "A cloud-based platform for creating and sharing relational databases with structured field types and built-in automations.",
+      "auth_method": "OAuth",
+      "gating": "Unclear from fetched text",
+      "api_surface": "CLI only",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://airtable.com/developers/agents",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 73,
+    "category": "Productivity and Project Management",
+    "name": "Linear",
+    "hint": "developers.linear.app",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 940,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Platform for building apps and integrations for Linear using the GraphQL API and TypeScript SDK.",
+        "auth_method": "OAuth 2.0 or personal API keys",
+        "gating": "Unclear from fetched text",
+        "api_surface": "GraphQL",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://linear.app/developers",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Linear API documentation authentication",
+      "candidate_urls": [
+        "https://linear.app/",
+        "https://linear.app/download"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "The product development system for teams and agents, purpose-built for planning and building products.",
+        "auth_method": "OAuth 2.0 or personal API keys",
+        "gating": "Unclear from fetched text",
+        "api_surface": "GraphQL",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://linear.app/developers",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "The product development system for teams and agents, purpose-built for planning and building products.",
+      "auth_method": "OAuth 2.0 or personal API keys",
+      "gating": "Unclear from fetched text",
+      "api_surface": "GraphQL",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://linear.app/developers",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 74,
+    "category": "Productivity and Project Management",
+    "name": "Jira",
+    "hint": "developer.atlassian.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 276,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Developer documentation and resources for Atlassian products",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Insufficient documentation details",
+        "evidence_url": "https://developer.atlassian.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Jira API documentation authentication",
+      "candidate_urls": [
+        "https://www.atlassian.com/software/jira",
+        "https://id.atlassian.com/login"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Developer documentation and resources for Atlassian products including Cloud and Data Center.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Insufficient documentation details",
+        "evidence_url": "https://developer.atlassian.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "Developer documentation and resources for Atlassian products including Cloud and Data Center.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "Insufficient documentation details",
+      "evidence_url": "https://developer.atlassian.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 75,
+    "category": "Productivity and Project Management",
+    "name": "Asana",
+    "hint": "developers.asana.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 1872,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Project Management",
+        "description": "Integrate tools, automate actions, and customize workflows with Asana\u2019s developer platform.",
+        "auth_method": "token",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developers.asana.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Asana API documentation authentication",
+      "candidate_urls": [
+        "https://asana.com/",
+        "https://app.asana.com/-/login"
+      ],
+      "extraction": {
+        "category": "Work & Project Management",
+        "description": "Work and project management platform for human-agent teams, integrating tools, workflows, and automation.",
+        "auth_method": "token",
+        "gating": "Self-serve free",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developers.asana.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Work & Project Management",
+      "description": "Work and project management platform for human-agent teams, integrating tools, workflows, and automation.",
+      "auth_method": "token",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://developers.asana.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 76,
+    "category": "Productivity and Project Management",
+    "name": "Monday.com",
+    "hint": "developer.monday.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 4493,
+      "fetch_error": null,
+      "extraction": {
+        "category": "AI/Research",
+        "description": "monday.com is an open AI work platform that lets you connect enterprise data, automate workflows, and integrate AI agents.",
+        "auth_method": "OAuth2",
+        "gating": "Unclear from fetched text",
+        "api_surface": "GraphQL",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developer.monday.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Monday.com API documentation authentication",
+      "candidate_urls": [
+        "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/query",
+        "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/query"
+      ],
+      "extraction": {
+        "category": "AI/Research",
+        "description": "An open AI work platform that lets you connect enterprise data, automate workflows, and build AI agent tools.",
+        "auth_method": "OAuth2",
+        "gating": "Unclear from fetched text",
+        "api_surface": "GraphQL",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developer.monday.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "AI/Research",
+      "description": "An open AI work platform that lets you connect enterprise data, automate workflows, and build AI agent tools.",
+      "auth_method": "OAuth2",
+      "gating": "Unclear from fetched text",
+      "api_surface": "GraphQL",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://developer.monday.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 77,
+    "category": "Productivity and Project Management",
+    "name": "ClickUp",
+    "hint": "clickup.com/api",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 802,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Project Management",
+        "description": "Build integrations and apps with our Public API and connect your AI with ClickUp using our MCP Server.",
+        "auth_method": "OAuth",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developer.clickup.com",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "ClickUp API documentation authentication",
+      "candidate_urls": [
+        "https://clickup.com/",
+        "https://clickup.com/download"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "An all-in-one productivity platform with project management, AI agents, chat, and a public API/MCP server.",
+        "auth_method": "OAuth",
+        "gating": "Self-serve free",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developer.clickup.com",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "An all-in-one productivity platform with project management, AI agents, chat, and a public API/MCP server.",
+      "auth_method": "OAuth",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://developer.clickup.com",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 78,
+    "category": "Productivity and Project Management",
+    "name": "Coda",
+    "hint": "coda.io/developers",
+    "pass1": {
+      "fetch_status": null,
+      "char_count": 0,
+      "fetch_error": "HTTPSConnectionPool(host='docs.superhuman.com', port=443): Max retries exceeded with url: /developers (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text available",
+        "evidence_url": "https://coda.io/developers",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Coda API documentation authentication",
+      "candidate_urls": [
+        "https://coda.io/",
+        "https://en.wikipedia.org/wiki/CODA_(2021_film)"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "An all-in-one collaborative workspace that brings teams, docs, databases, and AI together.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "API surface and auth details unclear",
+        "evidence_url": "https://coda.io/developers",
+        "confidence": "Medium"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "An all-in-one collaborative workspace that brings teams, docs, databases, and AI together.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Friction",
+      "blocker": "API surface and auth details unclear",
+      "evidence_url": "https://coda.io/developers",
+      "confidence": "Medium"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 79,
+    "category": "Productivity and Project Management",
+    "name": "Smartsheet",
+    "hint": "smartsheet.com/developers",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 1267,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Smartsheet developers and API documentation for building on the Smartsheet platform",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developers.smartsheet.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Smartsheet API documentation authentication",
+      "candidate_urls": [
+        "https://app.smartsheet.com/b/home",
+        "https://www.smartsheet.com/"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Work management platform with developer tools, API guides, SDKs, and an MCP server.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developers.smartsheet.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "Work management platform with developer tools, API guides, SDKs, and an MCP server.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://developers.smartsheet.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 80,
+    "category": "Productivity and Project Management",
+    "name": "Harvest",
+    "hint": "help.getharvest.com/api-v2",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 1216,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "API documentation and resources for Harvest, covering time tracking, invoicing, projects, and expenses.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "Auth method and gating unclear from text",
+        "evidence_url": "https://help.getharvest.com/api-v2/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Harvest API documentation authentication",
+      "candidate_urls": [
+        "https://www.getharvest.com/",
+        "https://www.getharvest.com/apps"
+      ],
+      "extraction": {
+        "category": "Fintech",
+        "description": "Harvest helps professional teams track time, bill clients, optimize team time, and measure performance with confidence.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://help.getharvest.com/api-v2/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Fintech",
+      "description": "Harvest helps professional teams track time, bill clients, optimize team time, and measure performance with confidence.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "REST",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://help.getharvest.com/api-v2/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 81,
+    "category": "Finance and Fintech",
+    "name": "Stripe",
+    "hint": "stripe.com/docs/api",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 8990,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Fintech",
+        "description": "Provides a REST API for online payment processing, billing, commerce, and financial services.",
+        "auth_method": "API key",
+        "gating": "Self-serve free",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://docs.stripe.com/api",
+        "confidence": "High"
+      }
+    },
+    "pass2": null,
+    "final": {
+      "category": "Fintech",
+      "description": "Provides a REST API for online payment processing, billing, commerce, and financial services.",
+      "auth_method": "API key",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://docs.stripe.com/api",
+      "confidence": "High"
+    },
+    "used_pass2": false
+  },
+  {
+    "id": 82,
+    "category": "Finance and Fintech",
+    "name": "Plaid",
+    "hint": "plaid.com/docs",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 4695,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Fintech",
+        "description": "Plaid provides financial APIs and client-side components to connect bank accounts, retrieve transaction data, and handle payments, identity verification, and lending insights.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://plaid.com/docs/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Plaid API documentation authentication",
+      "candidate_urls": [
+        "https://plaid.com/",
+        "https://plaid.com/how-it-works-for-consumers/"
+      ],
+      "extraction": {
+        "category": "Fintech",
+        "description": "Plaid enables apps to securely connect to financial accounts and access real-time financial data and services.",
+        "auth_method": "API key",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://plaid.com/docs/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Fintech",
+      "description": "Plaid enables apps to securely connect to financial accounts and access real-time financial data and services.",
+      "auth_method": "API key",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://plaid.com/docs/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 83,
+    "category": "Finance and Fintech",
+    "name": "Binance",
+    "hint": "binance-docs.github.io",
+    "pass1": {
+      "fetch_status": null,
+      "char_count": 0,
+      "fetch_error": "HTTPSConnectionPool(host='binance-docs.github.io', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))",
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text available",
+        "evidence_url": "https://binance-docs.github.io",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Binance API documentation authentication",
+      "candidate_urls": [
+        "https://www.binance.com/",
+        "https://accounts.binance.com/en/login"
+      ],
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text available",
+        "evidence_url": "https://binance-docs.github.io",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Unclear from fetched text",
+      "description": "Unclear from fetched text",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "Fetch failed, no text available",
+      "evidence_url": "https://binance-docs.github.io",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 84,
+    "category": "Finance and Fintech",
+    "name": "Paygent Connect",
+    "hint": "paygent (NMI-powered)",
+    "pass1": {
+      "fetch_status": null,
+      "char_count": 0,
+      "fetch_error": "Failed to parse: Host 'paygent (NMI-powered)' contains invalid character ' '",
+      "extraction": {
+        "category": "Fintech",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text available",
+        "evidence_url": "https://paygent",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Paygent Connect API documentation authentication",
+      "candidate_urls": [
+        "https://courtcasefinder.com/",
+        "https://recordsfinder.com/judgment/"
+      ],
+      "extraction": {
+        "category": "AI/Research",
+        "description": "An electronic court case and record retrieval service for looking up civil, criminal, property, and traffic court records.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "No public API found",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "No public API found",
+        "evidence_url": "https://courtcasefinder.com?abt=items%3D6a7c28170f77f86f30381706%26abrid%3D6a7c28170f77f86f30381706%26abid%3Dba12ec3cad7b112b7b7675fd%26abcoll%3Dcitem",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "AI/Research",
+      "description": "An electronic court case and record retrieval service for looking up civil, criminal, property, and traffic court records.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "No public API found",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "No public API found",
+      "evidence_url": "https://courtcasefinder.com?abt=items%3D6a7c28170f77f86f30381706%26abrid%3D6a7c28170f77f86f30381706%26abid%3Dba12ec3cad7b112b7b7675fd%26abcoll%3Dcitem",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 85,
+    "category": "Finance and Fintech",
+    "name": "iPayX",
+    "hint": "ipayx.ai/docs",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 59,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Fintech",
+        "description": "iPayX Protocol is a FINTRAC-registered FX forensic audit layer.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "No API or auth details provided",
+        "evidence_url": "https://www.ipayx.ai/docs",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "iPayX API documentation authentication",
+      "candidate_urls": [
+        "https://support.google.com/youtubetv/?hl=en",
+        "https://support.google.com/youtube/answer/3227660?hl=fr&co=GENIE.Platform%3DAndroid"
+      ],
+      "extraction": {
+        "category": "Fintech",
+        "description": "FINTRAC-registered FX forensic audit layer",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "No API or documentation available",
+        "evidence_url": "https://www.ipayx.ai/docs",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Fintech",
+      "description": "FINTRAC-registered FX forensic audit layer",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "No API or documentation available",
+      "evidence_url": "https://www.ipayx.ai/docs",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 86,
+    "category": "Finance and Fintech",
+    "name": "QuickBooks",
+    "hint": "developer.intuit.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 68,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Fintech",
+        "description": "Intuit developer portal and platform for compiling and pre-filling Intuit information",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Insufficient text content provided",
+        "evidence_url": "https://developer.intuit.com/app/developer/homepage",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "QuickBooks API documentation authentication",
+      "candidate_urls": [
+        "https://chatgpt.com/",
+        "https://chatgpt.com/features"
+      ],
+      "extraction": {
+        "category": "Fintech",
+        "description": "Intuit Developer platform providing info and tools.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Insufficient documentation and API details in text",
+        "evidence_url": "https://developer.intuit.com/app/developer/homepage",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Fintech",
+      "description": "Intuit Developer platform providing info and tools.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "Insufficient documentation and API details in text",
+      "evidence_url": "https://developer.intuit.com/app/developer/homepage",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 87,
+    "category": "Finance and Fintech",
+    "name": "Xero",
+    "hint": "developer.xero.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 4786,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Fintech",
+        "description": "Developer platform providing APIs, SDKs, and AI tools for building integrations with Xero.",
+        "auth_method": "OAuth2",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developer.xero.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Xero API documentation authentication",
+      "candidate_urls": [
+        "https://www.xero.com/?msockid=072ed370cad060e7108ec4a6cb1d612b",
+        "https://www.xero.com/login/?msockid=072ed370cad060e7108ec4a6cb1d612b"
+      ],
+      "extraction": {
+        "category": "Fintech",
+        "description": "Accounting software for small businesses with invoicing, payroll, and reporting in one place.",
+        "auth_method": "Client credentials grant type",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developer.xero.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Fintech",
+      "description": "Accounting software for small businesses with invoicing, payroll, and reporting in one place.",
+      "auth_method": "Client credentials grant type",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "REST",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://developer.xero.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 88,
+    "category": "Finance and Fintech",
+    "name": "Brex",
+    "hint": "developer.brex.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 2077,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Fintech",
+        "description": "Brex is a fully unified spend platform offering global corporate cards, expense management, reimbursements, travel, and bill pay.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developer.brex.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Brex API documentation authentication",
+      "candidate_urls": [
+        "https://finance.yahoo.com/quote/MSFT/",
+        "https://www.google.com/finance/quote/MSFT%3ANASDAQ"
+      ],
+      "extraction": {
+        "category": "Fintech",
+        "description": "Brex is a spend platform with global corporate cards, expense management, reimbursements, travel, and bill pay.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://developer.brex.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Fintech",
+      "description": "Brex is a spend platform with global corporate cards, expense management, reimbursements, travel, and bill pay.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://developer.brex.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 89,
+    "category": "Finance and Fintech",
+    "name": "Ramp",
+    "hint": "docs.ramp.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 880,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Fintech",
+        "description": "API documentation portal for Ramp providing machine-readable docs, LLM indexes, and OpenAPI specifications.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://docs.ramp.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Ramp API documentation authentication",
+      "candidate_urls": [
+        "https://ramp.com/",
+        "https://app.ramp.com/sign-in"
+      ],
+      "extraction": {
+        "category": "Fintech",
+        "description": "Spend management, corporate cards, bill payments, and banking platform.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "REST",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://docs.ramp.com/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Fintech",
+      "description": "Spend management, corporate cards, bill payments, and banking platform.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://docs.ramp.com/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 90,
+    "category": "Finance and Fintech",
+    "name": "PitchBook",
+    "hint": "pitchbook.com (research API)",
+    "pass1": {
+      "fetch_status": null,
+      "char_count": 0,
+      "fetch_error": "Failed to parse: Host 'pitchbook.com (research API)' contains invalid character ' '",
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text available",
+        "evidence_url": "https://pitchbook.com",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "PitchBook API documentation authentication",
+      "candidate_urls": [
+        "https://www.zhihu.com/question/23193517",
+        "https://www.zhihu.com/question/274864680"
+      ],
+      "extraction": {
+        "category": "Fintech",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text",
+        "evidence_url": "https://pitchbook.com",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Fintech",
+      "description": "Unclear from fetched text",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "Fetch failed, no text",
+      "evidence_url": "https://pitchbook.com",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 91,
+    "category": "AI, Research and Media-native",
+    "name": "NotebookLM",
+    "hint": "cloud.google.com/gemini (Enterprise API)",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 152,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Page not found 404 error",
+        "evidence_url": "https://cloud.google.com/gemini%20(Enterprise%20API)",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "NotebookLM API documentation authentication",
+      "candidate_urls": [
+        "https://notebooklm.google.com/?authuser=1",
+        "https://notebook.google/"
+      ],
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Page not found and requires sign-in",
+        "evidence_url": "https://cloud.google.com/gemini%20(Enterprise%20API)",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Unclear from fetched text",
+      "description": "Unclear from fetched text",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "Page not found and requires sign-in",
+      "evidence_url": "https://cloud.google.com/gemini%20(Enterprise%20API)",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 92,
+    "category": "AI, Research and Media-native",
+    "name": "Otter AI",
+    "hint": "help.otter.ai (MCP server)",
+    "pass1": {
+      "fetch_status": null,
+      "char_count": 0,
+      "fetch_error": "Failed to parse: Host 'help.otter.ai (MCP server)' contains invalid character ' '",
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed",
+        "evidence_url": "https://help.otter.ai",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Otter AI API documentation authentication",
+      "candidate_urls": [
+        "https://otter.ai/?msockid=2708106bafa76a3b21ef07bdae966b89",
+        "https://en.wikipedia.org/wiki/Otter"
+      ],
+      "extraction": {
+        "category": "AI/Research",
+        "description": "An AI meeting assistant and conversational knowledge engine that transcribes meetings, captures summaries, and extracts action items.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "No public API found",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Friction",
+        "blocker": "No public API surface detailed in text besides MCP server",
+        "evidence_url": "https://help.otter.ai",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "AI/Research",
+      "description": "An AI meeting assistant and conversational knowledge engine that transcribes meetings, captures summaries, and extracts action items.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "No public API found",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Friction",
+      "blocker": "No public API surface detailed in text besides MCP server",
+      "evidence_url": "https://help.otter.ai",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 93,
+    "category": "AI, Research and Media-native",
+    "name": "Fathom",
+    "hint": "fathom.video",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 6445,
+      "fetch_error": null,
+      "extraction": {
+        "category": "AI/Research",
+        "description": "Fathom summarizes meetings, captures notes, provides AI-generated insights, and syncs data to various workplace tools.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "No public API found",
+        "has_mcp": "No",
+        "buildability_verdict": "Blocked",
+        "blocker": "No public API found",
+        "evidence_url": "https://www.fathom.ai/",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Fathom API documentation authentication",
+      "candidate_urls": [
+        "https://www.fathom.ai/",
+        "https://help.fathom.video/en/articles/449088"
+      ],
+      "extraction": {
+        "category": "AI/Research",
+        "description": "Fathom is an AI notetaker that summarizes meetings, records transcripts, and syncs meeting data with other tools.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "No public API found",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "No public API found",
+        "evidence_url": "https://www.fathom.ai/",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "AI/Research",
+      "description": "Fathom is an AI notetaker that summarizes meetings, records transcripts, and syncs meeting data with other tools.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "No public API found",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "No public API found",
+      "evidence_url": "https://www.fathom.ai/",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 94,
+    "category": "AI, Research and Media-native",
+    "name": "Consensus",
+    "hint": "consensus.app (OAuth requested)",
+    "pass1": {
+      "fetch_status": null,
+      "char_count": 0,
+      "fetch_error": "Failed to parse: Host 'consensus.app (OAuth requested)' contains invalid character ' '",
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text available",
+        "evidence_url": "https://consensus.app",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Consensus API documentation authentication",
+      "candidate_urls": [
+        "https://www.tenforums.com/tutorials/141924-enable-disable-touchpad-windows-10-a.html",
+        "https://forum.shiftdelete.net/konular/laptop-touchpad-dokunmatik-fare-tiklama-sorunu.55124/"
+      ],
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text available",
+        "evidence_url": "https://consensus.app",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Unclear from fetched text",
+      "description": "Unclear from fetched text",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Blocked",
+      "blocker": "Fetch failed, no text available",
+      "evidence_url": "https://consensus.app",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 95,
+    "category": "AI, Research and Media-native",
+    "name": "Reducto",
+    "hint": "reducto.ai (document parsing)",
+    "pass1": {
+      "fetch_status": null,
+      "char_count": 0,
+      "fetch_error": "Failed to parse: Host 'reducto.ai (document parsing)' contains invalid character ' '",
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text available",
+        "evidence_url": "https://reducto.ai",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Reducto API documentation authentication",
+      "candidate_urls": [
+        "https://docs.reducto.ai/overview",
+        "https://reducto.ai/"
+      ],
+      "extraction": {
+        "category": "AI/Research",
+        "description": "The agentic document platform for AI teams providing parsing, extraction, splitting, and editing APIs.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://docs.reducto.ai/overview",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "AI/Research",
+      "description": "The agentic document platform for AI teams providing parsing, extraction, splitting, and editing APIs.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "REST",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://docs.reducto.ai/overview",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 96,
+    "category": "AI, Research and Media-native",
+    "name": "Devin",
+    "hint": "docs.devin.ai (MCP)",
+    "pass1": {
+      "fetch_status": null,
+      "char_count": 0,
+      "fetch_error": "Failed to parse: Host 'docs.devin.ai (MCP)' contains invalid character ' '",
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text",
+        "evidence_url": "https://docs.devin.ai",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Devin API documentation authentication",
+      "candidate_urls": [
+        "https://docs.devin.ai/get-started/devin-intro",
+        "https://devin.ai/"
+      ],
+      "extraction": {
+        "category": "AI/Research",
+        "description": "Devin is an autonomous AI software engineer that can write, run and test code.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve paid/trial",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Friction",
+        "blocker": "API and auth details unclear",
+        "evidence_url": "https://docs.devin.ai/get-started/devin-intro",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "AI/Research",
+      "description": "Devin is an autonomous AI software engineer that can write, run and test code.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Unclear from fetched text",
+      "buildability_verdict": "Friction",
+      "blocker": "API and auth details unclear",
+      "evidence_url": "https://docs.devin.ai/get-started/devin-intro",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 97,
+    "category": "AI, Research and Media-native",
+    "name": "higgsfield",
+    "hint": "higgsfield.ai/cli (content suite)",
+    "pass1": {
+      "fetch_status": 404,
+      "char_count": 0,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text available",
+        "evidence_url": "https://higgsfield.ai/cli%20(content%20suite)",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "higgsfield API documentation authentication",
+      "candidate_urls": [
+        "https://higgsfield.ai/",
+        "https://higgsfield.ai/about"
+      ],
+      "extraction": {
+        "category": "AI/Research",
+        "description": "An AI-native creative suite and video/image generation platform for cinematic production.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "CLI only",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Friction",
+        "blocker": "No standard developer REST or GraphQL API documented",
+        "evidence_url": "https://higgsfield.ai/cli%20(content%20suite)",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "AI/Research",
+      "description": "An AI-native creative suite and video/image generation platform for cinematic production.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "CLI only",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Friction",
+      "blocker": "No standard developer REST or GraphQL API documented",
+      "evidence_url": "https://higgsfield.ai/cli%20(content%20suite)",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 98,
+    "category": "AI, Research and Media-native",
+    "name": "Mermaid CLI",
+    "hint": "github.com/mermaid-js/mermaid-cli",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 7212,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Command line tool for the Mermaid library that takes a mermaid definition file and generates an SVG, PNG, or PDF file.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Open source",
+        "api_surface": "CLI only",
+        "has_mcp": "No",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://github.com/mermaid-js/mermaid-cli",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Mermaid CLI API documentation authentication",
+      "candidate_urls": [
+        "https://mermaid.live/",
+        "https://mermaid.js.org/"
+      ],
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "Command-line tool and Node.JS API for the Mermaid library to generate SVG, PNG, or PDF files from mermaid definition files.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Open source",
+        "api_surface": "CLI only",
+        "has_mcp": "No",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://github.com/mermaid-js/mermaid-cli",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "Dev/Infra",
+      "description": "Command-line tool and Node.JS API for the Mermaid library to generate SVG, PNG, or PDF files from mermaid definition files.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Open source",
+      "api_surface": "CLI only",
+      "has_mcp": "No",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://github.com/mermaid-js/mermaid-cli",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  },
+  {
+    "id": 99,
+    "category": "AI, Research and Media-native",
+    "name": "YouTube Transcript",
+    "hint": "transcriptapi.com",
+    "pass1": {
+      "fetch_status": 200,
+      "char_count": 13287,
+      "fetch_error": null,
+      "extraction": {
+        "category": "Dev/Infra",
+        "description": "YouTube Transcript API with Search, Channels & Playlists via REST API or YouTube MCP",
+        "auth_method": "API key",
+        "gating": "Self-serve free",
+        "api_surface": "REST",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://transcriptapi.com/",
+        "confidence": "High"
+      }
+    },
+    "pass2": null,
+    "final": {
+      "category": "Dev/Infra",
+      "description": "YouTube Transcript API with Search, Channels & Playlists via REST API or YouTube MCP",
+      "auth_method": "API key",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://transcriptapi.com/",
+      "confidence": "High"
+    },
+    "used_pass2": false
+  },
+  {
+    "id": 100,
+    "category": "AI, Research and Media-native",
+    "name": "Grain",
+    "hint": "grain.com (meeting notes)",
+    "pass1": {
+      "fetch_status": null,
+      "char_count": 0,
+      "fetch_error": "Failed to parse: Host 'grain.com (meeting notes)' contains invalid character ' '",
+      "extraction": {
+        "category": "Unclear from fetched text",
+        "description": "Unclear from fetched text",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Unclear from fetched text",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Unclear from fetched text",
+        "buildability_verdict": "Blocked",
+        "blocker": "Fetch failed, no text",
+        "evidence_url": "https://grain.com",
+        "confidence": "High"
+      }
+    },
+    "pass2": {
+      "search_query": "Grain API documentation authentication",
+      "candidate_urls": [
+        "https://en.m.wikipedia.org/wiki/Grain",
+        "https://grain.com/"
+      ],
+      "extraction": {
+        "category": "AI/Research",
+        "description": "Grain is an AI notetaker and meeting capture tool that delivers enriched transcripts to AI tools, agents, and teams.",
+        "auth_method": "Unclear from fetched text",
+        "gating": "Self-serve free",
+        "api_surface": "Unclear from fetched text",
+        "has_mcp": "Yes",
+        "buildability_verdict": "Ready",
+        "blocker": "None",
+        "evidence_url": "https://grain.com",
+        "confidence": "High"
+      }
+    },
+    "final": {
+      "category": "AI/Research",
+      "description": "Grain is an AI notetaker and meeting capture tool that delivers enriched transcripts to AI tools, agents, and teams.",
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "Unclear from fetched text",
+      "has_mcp": "Yes",
+      "buildability_verdict": "Ready",
+      "blocker": "None",
+      "evidence_url": "https://grain.com",
+      "confidence": "High"
+    },
+    "used_pass2": true
+  }
+]

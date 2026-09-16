@@ -1,0 +1,629 @@
+[
+  {
+    "id": 2,
+    "name": "HubSpot",
+    "category": "CRM and Sales",
+    "hint": "hubspot.com",
+    "agent_pass1": {
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "Unclear from fetched text",
+      "buildability_verdict": "Friction"
+    },
+    "agent_final": {
+      "auth_method": "OAuth",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "evidence_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+    "actual_auth_method": "OAuth2 (+ legacy API/developer keys)",
+    "actual_gating": "Self-serve (free)",
+    "actual_api_surface": "REST",
+    "actual_buildability_verdict": "Ready",
+    "pass1_correct_fields": [
+      "gating"
+    ],
+    "final_correct_fields": [
+      "auth_method",
+      "gating",
+      "api_surface",
+      "buildability_verdict"
+    ],
+    "notes": "Pass 1 left auth/api unclear from the marketing homepage; pass 2 docs.hubspot.com fetch resolved both correctly."
+  },
+  {
+    "id": 1,
+    "name": "Salesforce",
+    "category": "CRM and Sales",
+    "hint": "salesforce.com",
+    "agent_pass1": {
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "Unclear from fetched text",
+      "buildability_verdict": "Friction"
+    },
+    "agent_final": {
+      "auth_method": "OAuth2",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "evidence_url": "https://salesforce.com",
+    "actual_auth_method": "OAuth2",
+    "actual_gating": "Self-serve (free)",
+    "actual_api_surface": "REST",
+    "actual_buildability_verdict": "Ready",
+    "pass1_correct_fields": [
+      "gating"
+    ],
+    "final_correct_fields": [
+      "auth_method",
+      "gating",
+      "api_surface",
+      "buildability_verdict"
+    ],
+    "notes": "Independent check on developer.salesforce.com returned 403 (bot-blocked) - same wall the pipeline would hit. Final answer matches well-established public fact (free Developer Edition orgs)."
+  },
+  {
+    "id": 15,
+    "name": "Pylon",
+    "category": "Support and Helpdesk",
+    "hint": "usepylon.com",
+    "agent_pass1": {
+      "auth_method": "Unclear from fetched text",
+      "gating": "Partner/contact-sales gated",
+      "api_surface": "Unclear from fetched text",
+      "buildability_verdict": "Friction"
+    },
+    "agent_final": {
+      "auth_method": "Bearer token",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "evidence_url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+    "actual_auth_method": "Bearer token",
+    "actual_gating": "Unclear from public docs (no pricing/access terms stated)",
+    "actual_api_surface": "REST (likely)",
+    "actual_buildability_verdict": "Ready",
+    "pass1_correct_fields": [],
+    "final_correct_fields": [
+      "auth_method",
+      "gating",
+      "api_surface"
+    ],
+    "notes": "Pass 1 WRONG: claimed Partner/contact-sales gated with no supporting evidence. Pass 2 corrected this to an honest Unclear - a genuine self-correction."
+  },
+  {
+    "id": 14,
+    "name": "Front",
+    "category": "Support and Helpdesk",
+    "hint": "front.com",
+    "agent_pass1": {
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "buildability_verdict": "Blocked"
+    },
+    "agent_final": {
+      "auth_method": "Bearer tokens",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "evidence_url": "https://dev.frontapp.com/docs/authentication",
+    "actual_auth_method": "Bearer token (+ OAuth for public integrations)",
+    "actual_gating": "Unclear from public docs",
+    "actual_api_surface": "REST (implied, not stated explicitly)",
+    "actual_buildability_verdict": "Ready",
+    "pass1_correct_fields": [
+      "gating"
+    ],
+    "final_correct_fields": [
+      "auth_method",
+      "gating",
+      "api_surface",
+      "buildability_verdict"
+    ],
+    "notes": "Pass 1 Blocked verdict was too harsh given no evidence of an actual blocker; pass 2 Ready is better supported."
+  },
+  {
+    "id": 24,
+    "name": "Lark (Larksuite)",
+    "category": "Communications and Messaging",
+    "hint": "open.larksuite.com",
+    "agent_pass1": {
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "buildability_verdict": "Blocked"
+    },
+    "agent_final": {
+      "auth_method": "tenant access token",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "evidence_url": "https://github.com/larksuite/lark-openapi-mcp",
+    "actual_auth_method": "tenant_access_token / app_access_token",
+    "actual_gating": "Self-serve (free), unconfirmed independently - docs are JS-rendered, blocked plain fetch",
+    "actual_api_surface": "REST",
+    "actual_buildability_verdict": "Ready",
+    "pass1_correct_fields": [],
+    "final_correct_fields": [
+      "auth_method",
+      "api_surface"
+    ],
+    "notes": "Independent verification hit the same JS-shell/blocked-fetch wall as the pipeline. Final answers match well-known public facts about Lark API but were not independently re-confirmed via fetch."
+  },
+  {
+    "id": 23,
+    "name": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "hint": "zoho.com/cliq",
+    "agent_pass1": {
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "buildability_verdict": "Blocked"
+    },
+    "agent_final": {
+      "auth_method": "OAuth2",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "evidence_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction",
+    "actual_auth_method": "OAuth2 (Zoho accounts)",
+    "actual_gating": "Unconfirmed independently (403 on two attempts)",
+    "actual_api_surface": "REST",
+    "actual_buildability_verdict": "Ready",
+    "pass1_correct_fields": [],
+    "final_correct_fields": [
+      "auth_method",
+      "api_surface"
+    ],
+    "notes": "Independent check also got 403 Forbidden - same real-world access friction as the pipeline hit."
+  },
+  {
+    "id": 32,
+    "name": "Meta Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.facebook.com/docs/marketing-apis",
+    "agent_pass1": {
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "GraphQL",
+      "buildability_verdict": "Friction"
+    },
+    "agent_final": {
+      "auth_method": "OAuth 2.0 and token",
+      "gating": "Requires admin approval",
+      "api_surface": "GraphQL",
+      "buildability_verdict": "Friction"
+    },
+    "evidence_url": "https://developers.facebook.com/docs/marketing-apis",
+    "actual_auth_method": "OAuth2 (access tokens)",
+    "actual_gating": "Requires admin approval (Meta App Review)",
+    "actual_api_surface": "REST-like (Graph API, not the GraphQL query language)",
+    "actual_buildability_verdict": "Friction",
+    "pass1_correct_fields": [],
+    "final_correct_fields": [
+      "auth_method",
+      "gating",
+      "buildability_verdict"
+    ],
+    "notes": "MISS: both passes label the API surface GraphQL. Meta Graph API is a REST-like custom API, not built on the GraphQL spec - a plausible name-based mix-up that never got corrected."
+  },
+  {
+    "id": 39,
+    "name": "Threads (Meta)",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.facebook.com/docs/threads",
+    "agent_pass1": {
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "buildability_verdict": "Friction"
+    },
+    "agent_final": {
+      "auth_method": "OAuth 2.0",
+      "gating": "Requires admin approval",
+      "api_surface": "REST + GraphQL",
+      "buildability_verdict": "Friction"
+    },
+    "evidence_url": "https://developers.facebook.com/docs/threads",
+    "actual_auth_method": "OAuth2 (Threads user access tokens)",
+    "actual_gating": "Requires admin approval (Meta App Review required for production)",
+    "actual_api_surface": "REST-like (Graph API style), not literally GraphQL",
+    "actual_buildability_verdict": "Friction",
+    "pass1_correct_fields": [],
+    "final_correct_fields": [
+      "auth_method",
+      "gating",
+      "buildability_verdict"
+    ],
+    "notes": "Auth and gating fully confirmed via direct fetch of Meta own docs. Same GraphQL mislabeling issue as Meta Ads carries into the api_surface field."
+  },
+  {
+    "id": 42,
+    "name": "WooCommerce",
+    "category": "Ecommerce",
+    "hint": "woocommerce.com/document/woocommerce-rest-api",
+    "agent_pass1": {
+      "auth_method": "API key",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "agent_final": {
+      "auth_method": "API key",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "evidence_url": "https://woocommerce.com/document/woocommerce-rest-api",
+    "actual_auth_method": "API key (Consumer Key/Secret)",
+    "actual_gating": "Self-serve (free)",
+    "actual_api_surface": "REST",
+    "actual_buildability_verdict": "Ready",
+    "pass1_correct_fields": [
+      "auth_method",
+      "gating",
+      "api_surface",
+      "buildability_verdict"
+    ],
+    "final_correct_fields": [
+      "auth_method",
+      "gating",
+      "api_surface",
+      "buildability_verdict"
+    ],
+    "notes": "Pass 1 was already fully correct on every field - pass 2 never triggered. Confirms the escalation logic does not fire needlessly when the hint page already has the answer."
+  },
+  {
+    "id": 47,
+    "name": "Ecwid",
+    "category": "Ecommerce",
+    "hint": "api-docs.ecwid.com",
+    "agent_pass1": {
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "agent_final": {
+      "auth_method": "OAuth2",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "evidence_url": "https://api-docs.ecwid.com",
+    "actual_auth_method": "OAuth2 (per general knowledge; docs page fetched was a nav index with no detail)",
+    "actual_gating": "Unclear from public docs",
+    "actual_api_surface": "REST",
+    "actual_buildability_verdict": "Ready",
+    "pass1_correct_fields": [
+      "api_surface"
+    ],
+    "final_correct_fields": [
+      "gating",
+      "api_surface",
+      "buildability_verdict"
+    ],
+    "notes": "Independent fetch landed on a documentation index page with no substantive detail, same limitation the pipeline likely hit."
+  },
+  {
+    "id": 51,
+    "name": "DataForSEO",
+    "category": "Data, SEO and Scraping",
+    "hint": "docs.dataforseo.com",
+    "agent_pass1": {
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "agent_final": {
+      "auth_method": "Basic auth",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "evidence_url": "https://docs.dataforseo.com",
+    "actual_auth_method": "HTTP Basic Auth (account login as username)",
+    "actual_gating": "Self-serve, free unlimited trial advertised",
+    "actual_api_surface": "REST",
+    "actual_buildability_verdict": "Ready",
+    "pass1_correct_fields": [
+      "api_surface"
+    ],
+    "final_correct_fields": [
+      "auth_method",
+      "gating",
+      "api_surface",
+      "buildability_verdict"
+    ],
+    "notes": "Pass 2 correctly resolved auth_method from Unclear to Basic auth, and refined gating from an imprecise paid/trial to free, matching DataForSEO own Free Unlimited Trial language."
+  },
+  {
+    "id": 60,
+    "name": "Clay",
+    "category": "Data, SEO and Scraping",
+    "hint": "clay.com",
+    "agent_pass1": {
+      "auth_method": "Unclear from fetched text",
+      "gating": "Self-serve free",
+      "api_surface": "Unclear from fetched text",
+      "buildability_verdict": "Ready"
+    },
+    "agent_final": {
+      "auth_method": "API key",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "evidence_url": "https://clay.com",
+    "actual_auth_method": "Unconfirmed independently (403 Forbidden)",
+    "actual_gating": "Unconfirmed independently",
+    "actual_api_surface": "Unconfirmed independently",
+    "actual_buildability_verdict": "Unconfirmed",
+    "pass1_correct_fields": [],
+    "final_correct_fields": [],
+    "notes": "Independent check blocked (403) on clay.com/university/api. Final answers are plausible given Clay public positioning but not independently confirmed."
+  },
+  {
+    "id": 62,
+    "name": "Vercel",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "vercel.com/docs/rest-api",
+    "agent_pass1": {
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "agent_final": {
+      "auth_method": "Vercel Access Tokens (Bearer token)",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "evidence_url": "https://vercel.com/docs/rest-api",
+    "actual_auth_method": "Vercel Access Tokens (Bearer token)",
+    "actual_gating": "Self-serve free in reality, but not explicitly stated on the fetched REST API reference page",
+    "actual_api_surface": "REST",
+    "actual_buildability_verdict": "Ready",
+    "pass1_correct_fields": [
+      "api_surface"
+    ],
+    "final_correct_fields": [
+      "auth_method",
+      "api_surface",
+      "buildability_verdict"
+    ],
+    "notes": "Gating stayed Unclear in both passes - technically correct given the specific page fetched, even though the real-world answer (self-serve free) is well known. A conservative miss, not a wrong claim."
+  },
+  {
+    "id": 64,
+    "name": "Cloudflare",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "developers.cloudflare.com/api",
+    "agent_pass1": {
+      "auth_method": "API token",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "agent_final": {
+      "auth_method": "API token",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "evidence_url": "https://developers.cloudflare.com/api",
+    "actual_auth_method": "API Token (+ legacy Global API Key)",
+    "actual_gating": "Self-serve (free, generated in-dashboard)",
+    "actual_api_surface": "REST",
+    "actual_buildability_verdict": "Ready",
+    "pass1_correct_fields": [
+      "auth_method",
+      "gating",
+      "api_surface",
+      "buildability_verdict"
+    ],
+    "final_correct_fields": [
+      "auth_method",
+      "gating",
+      "api_surface",
+      "buildability_verdict"
+    ],
+    "notes": "Pass 1 already fully correct on every field - pass 2 never triggered."
+  },
+  {
+    "id": 74,
+    "name": "Jira",
+    "category": "Productivity and Project Management",
+    "hint": "developer.atlassian.com",
+    "agent_pass1": {
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "buildability_verdict": "Blocked"
+    },
+    "agent_final": {
+      "auth_method": "Basic auth, OAuth, OAuth 1.0a, OAuth 2.0, Personal access token, Cookie-based authentication",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "buildability_verdict": "Friction"
+    },
+    "evidence_url": "https://developer.atlassian.com/server/jira/platform/basic-authentication",
+    "actual_auth_method": "API tokens (Basic auth) + OAuth 2.0 (3LO) for Jira Cloud specifically",
+    "actual_gating": "Unclear from public docs",
+    "actual_api_surface": "REST",
+    "actual_buildability_verdict": "Friction",
+    "pass1_correct_fields": [],
+    "final_correct_fields": [
+      "gating",
+      "api_surface"
+    ],
+    "notes": "MISS: final auth answer lists six methods as one undifferentiated set, several of which (OAuth 1.0a, PATs, cookie-based) are Jira Server/Data Center specific, not Jira Cloud REST API methods. Pass 2 search pulled a generic multi-product Atlassian auth page."
+  },
+  {
+    "id": 79,
+    "name": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "hint": "smartsheet.com/developers",
+    "agent_pass1": {
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "agent_final": {
+      "auth_method": "access tokens (API keys)",
+      "gating": "Self-serve paid/trial",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "evidence_url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "actual_auth_method": "Access tokens (Bearer) + OAuth2 (3-legged)",
+    "actual_gating": "Unconfirmed independently - docs do not state pricing/access terms",
+    "actual_api_surface": "REST",
+    "actual_buildability_verdict": "Ready",
+    "pass1_correct_fields": [
+      "api_surface"
+    ],
+    "final_correct_fields": [
+      "auth_method",
+      "api_surface",
+      "buildability_verdict"
+    ],
+    "notes": "MISS: final gating claim (Self-serve paid/trial) is not supported by the fetched text or by an independent check - an assertion that outran its evidence."
+  },
+  {
+    "id": 90,
+    "name": "PitchBook",
+    "category": "Finance and Fintech",
+    "hint": "pitchbook.com (research API)",
+    "agent_pass1": {
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "buildability_verdict": "Blocked"
+    },
+    "agent_final": {
+      "auth_method": "API key",
+      "gating": "Partner/contact-sales gated",
+      "api_surface": "REST",
+      "buildability_verdict": "Blocked"
+    },
+    "evidence_url": "https://dlthub.com/context/source/pitchbook-api",
+    "actual_auth_method": "No public self-serve API; access model unclear even to us",
+    "actual_gating": "Partner/contact-sales gated (confirmed - enterprise subscription required)",
+    "actual_api_surface": "Unconfirmed (403 on official site)",
+    "actual_buildability_verdict": "Blocked",
+    "pass1_correct_fields": [],
+    "final_correct_fields": [
+      "gating",
+      "buildability_verdict"
+    ],
+    "notes": "MISS: the auth_method claim (API key) is sourced from a third-party community connector (dlthub.com), not PitchBook own docs - flagged as an evidence-source quality issue even though the overall verdict (Blocked) is correct."
+  },
+  {
+    "id": 81,
+    "name": "Stripe",
+    "category": "Finance and Fintech",
+    "hint": "stripe.com/docs/api",
+    "agent_pass1": {
+      "auth_method": "API key",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "agent_final": {
+      "auth_method": "API key",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "evidence_url": "https://stripe.com/docs/api",
+    "actual_auth_method": "API key, sent as HTTP Basic Auth username",
+    "actual_gating": "Self-serve in practice (test-mode keys work immediately, no approval) though the specific auth page does not say free outright",
+    "actual_api_surface": "REST",
+    "actual_buildability_verdict": "Ready",
+    "pass1_correct_fields": [
+      "auth_method",
+      "api_surface",
+      "buildability_verdict"
+    ],
+    "final_correct_fields": [
+      "auth_method",
+      "api_surface",
+      "buildability_verdict"
+    ],
+    "notes": "Gating stayed Unclear in both passes - a defensible conservative reading given the fetched page never says the word free, even though Stripe is famously self-serve."
+  },
+  {
+    "id": 99,
+    "name": "YouTube Transcript",
+    "category": "AI, Research and Media-native",
+    "hint": "transcriptapi.com",
+    "agent_pass1": {
+      "auth_method": "API key",
+      "gating": "Unclear from fetched text",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "agent_final": {
+      "auth_method": "API key",
+      "gating": "Self-serve free",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "evidence_url": "https://transcriptapi.com",
+    "actual_auth_method": "API key (Bearer token)",
+    "actual_gating": "Self-serve (free) - 100 free credits, no card required",
+    "actual_api_surface": "REST",
+    "actual_buildability_verdict": "Ready",
+    "pass1_correct_fields": [
+      "auth_method",
+      "api_surface",
+      "buildability_verdict"
+    ],
+    "final_correct_fields": [
+      "auth_method",
+      "gating",
+      "api_surface",
+      "buildability_verdict"
+    ],
+    "notes": "Pass 2 correctly resolved gating from Unclear to Self-serve (free), matching the vendor own stated free-credit offer word for word."
+  },
+  {
+    "id": 94,
+    "name": "Consensus",
+    "category": "AI, Research and Media-native",
+    "hint": "consensus.app (OAuth requested)",
+    "agent_pass1": {
+      "auth_method": "Unclear from fetched text",
+      "gating": "Unclear from fetched text",
+      "api_surface": "Unclear from fetched text",
+      "buildability_verdict": "Blocked"
+    },
+    "agent_final": {
+      "auth_method": "API key",
+      "gating": "Requires admin approval",
+      "api_surface": "REST",
+      "buildability_verdict": "Ready"
+    },
+    "evidence_url": "https://docs.consensus.app/api-get-started",
+    "actual_auth_method": "Unconfirmed independently (403 Forbidden)",
+    "actual_gating": "Likely gated/waitlisted - the assignment own hint notes (OAuth requested)",
+    "actual_api_surface": "Unconfirmed independently",
+    "actual_buildability_verdict": "Unconfirmed",
+    "pass1_correct_fields": [],
+    "final_correct_fields": [],
+    "notes": "Independent check blocked (403) on two different Consensus docs URLs. Final Requires admin approval is plausible given the (OAuth requested) hint, but not independently confirmed."
+  }
+]
