@@ -21,7 +21,7 @@ def to_row(r):
     f = r["final"]
     return [
         r["id"], r["category"], r["name"], r["hint"],
-        f["auth_method"], f["gating"], f["api_surface"], f["has_mcp"],
+        f["description"], f["auth_method"], f["gating"], f["api_surface"], f["has_mcp"],
         f["buildability_verdict"], f["blocker"], f["evidence_url"], f["confidence"],
         r.get("used_pass2", False),
     ]

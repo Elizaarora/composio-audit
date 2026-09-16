@@ -21,8 +21,8 @@
     --accent-soft: #E1F1F2;
     --good: #157A40;
     --good-soft: #E4F5EA;
-    --good-2: #0E7C86;
-    --good-2-soft: #E1F1F2;
+    --good-2: #3F7A35;
+    --good-2-soft: #E9F1E2;
     --warn: #8F551A;
     --warn-soft: #FBEEDF;
     --critical: #B23A2F;
@@ -48,8 +48,8 @@
       --accent-soft: #133238;
       --good: #3FBE79;
       --good-soft: #123726;
-      --good-2: #35BAC5;
-      --good-2-soft: #103237;
+      --good-2: #8FCB5C;
+      --good-2-soft: #1E2E14;
       --warn: #E0A050;
       --warn-soft: #3A2A14;
       --critical: #E2685D;
@@ -74,8 +74,8 @@
     --accent-soft: #133238;
     --good: #3FBE79;
     --good-soft: #123726;
-    --good-2: #35BAC5;
-    --good-2-soft: #103237;
+    --good-2: #8FCB5C;
+    --good-2-soft: #1E2E14;
     --warn: #E0A050;
     --warn-soft: #3A2A14;
     --critical: #E2685D;
@@ -98,6 +98,7 @@
   }
   h1, h2, h3 { text-wrap: balance; font-weight: 600; letter-spacing: -0.01em; }
   code, .mono, .num { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+  code { overflow-wrap: anywhere; }
   a { color: var(--accent-ink); }
 
   .wrap { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
@@ -146,14 +147,15 @@
   .chart-card .chart-note { font-size: 12.5px; color: var(--ink-3); margin-bottom: 14px; }
   .bar-row { display: grid; grid-template-columns: 130px 1fr 34px; align-items: center; gap: 10px; margin-bottom: 9px; font-size: 12.5px; }
   .bar-row .label { color: var(--ink-2); text-align: right; }
-  .bar-track { height: 14px; background: var(--surface-2); border-radius: 4px; overflow: hidden; }
-  .bar-fill { height: 100%; background: var(--accent); border-radius: 4px; }
+  .bar-track { height: 18px; background: var(--surface-2); border-radius: 4px; overflow: hidden; }
+  .bar-fill { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
   .bar-row .val { font-family: 'IBM Plex Mono', monospace; color: var(--ink); }
 
   .stack-row { margin-bottom: 14px; }
   .stack-row .cat-label { font-size: 12.5px; color: var(--ink-2); margin-bottom: 5px; display: flex; justify-content: space-between; }
-  .stack-track { display: flex; height: 16px; border-radius: 4px; overflow: hidden; background: var(--surface-2); }
-  .stack-seg { height: 100%; }
+  .stack-track { display: flex; height: 20px; border-radius: 4px; overflow: hidden; background: var(--surface-2); }
+  .stack-seg { display: block; height: 100%; box-shadow: inset 0 0 0 1px var(--surface-2); }
+  .stack-seg:first-child { box-shadow: none; }
   .legend { display: flex; flex-wrap: wrap; gap: 12px 16px; margin-top: 16px; font-size: 12px; color: var(--ink-2); }
   .legend .sw { display: inline-flex; align-items: center; gap: 6px; }
   .legend .dot { width: 9px; height: 9px; border-radius: 2px; display: inline-block; }
@@ -281,9 +283,8 @@
         <div class="chart-note">Gating status as a share of each category&rsquo;s 10 apps. Docs describe auth mechanics reliably &mdash; access policy is a different, much less documented question.</div>
         <div id="stackedChartTarget"></div>
         <div class="legend">
-          <span class="sw"><span class="dot" style="background:var(--good)"></span>Self-serve (free)</span>
+          <span class="sw"><span class="dot" style="background:var(--good)"></span>Self-serve (free) / open source</span>
           <span class="sw"><span class="dot" style="background:var(--good-2)"></span>Self-serve (paid/trial)</span>
-          <span class="sw"><span class="dot" style="background:#5FA85C"></span>Open source</span>
           <span class="sw"><span class="dot" style="background:var(--warn)"></span>Admin approval</span>
           <span class="sw"><span class="dot" style="background:var(--critical)"></span>Partner-gated</span>
           <span class="sw"><span class="dot" style="background:var(--neutral-status)"></span>Unclear from docs</span>
@@ -321,6 +322,7 @@
             <th data-k="id">#</th>
             <th data-k="category">Category</th>
             <th data-k="name">App</th>
+            <th data-k="description">What it does</th>
             <th data-k="auth">Auth</th>
             <th data-k="gating">Gating</th>
             <th data-k="api">API</th>
@@ -475,13 +477,13 @@ function render() {
   const cat = catSel.value;
   const verdict = document.getElementById('verdictFilter').value;
   let rows = TABLE_ROWS.filter(r => {
-    const [id, category, name, hint, auth, gating, api, hasMcp, verd, blocker, evidence] = r;
+    const [id, category, name, hint, description, auth, gating, api, hasMcp, verd, blocker, evidence] = r;
     if (cat && category !== cat) return false;
     if (verdict && verd !== verdict) return false;
-    if (q && !(name.toLowerCase().includes(q) || category.toLowerCase().includes(q) || (blocker||'').toLowerCase().includes(q) || auth.toLowerCase().includes(q))) return false;
+    if (q && !(name.toLowerCase().includes(q) || category.toLowerCase().includes(q) || (blocker||'').toLowerCase().includes(q) || auth.toLowerCase().includes(q) || description.toLowerCase().includes(q))) return false;
     return true;
   });
-  const idx = {id:0,category:1,name:2,auth:4,gating:5,api:6,verdict:8,blocker:9};
+  const idx = {id:0,category:1,name:2,description:4,auth:5,gating:6,api:7,verdict:9,blocker:10};
   rows.sort((a,b) => {
     const ka = a[idx[sortKey]], kb = b[idx[sortKey]];
     if (typeof ka === 'number') return (ka-kb)*sortDir;
@@ -489,11 +491,12 @@ function render() {
   });
   document.getElementById('rowCount').textContent = rows.length + ' / ' + TABLE_ROWS.length + ' apps';
   document.getElementById('tableBody').innerHTML = rows.map(r => {
-    const [id, category, name, hint, auth, gating, api, hasMcp, verd, blocker, evidence, confidence, usedPass2] = r;
+    const [id, category, name, hint, description, auth, gating, api, hasMcp, verd, blocker, evidence, confidence, usedPass2] = r;
     return `<tr>
       <td class="mono cat">${id}</td>
       <td class="cat">${category}</td>
       <td class="app">${usedPass2 ? '<span class="p2-dot" title="escalated to pass 2"></span>' : ''}${name}</td>
+      <td class="blocker">${description}</td>
       <td>${auth}</td>
       <td><span class="badge ${gateClass(gating)}">${gateLabel(gating)}</span></td>
       <td>${api}</td>
@@ -531,8 +534,8 @@ render();
 (function() {
   const colors = {
     'Self-serve (free)': 'var(--good)',
+    'Open source': 'var(--good)',
     'Self-serve (paid/trial)': 'var(--good-2)',
-    'Open source': '#5FA85C',
     'Admin approval required': 'var(--warn)',
     'Partner/contact-sales gated': 'var(--critical)',
     'Unclear': 'var(--neutral-status)'
